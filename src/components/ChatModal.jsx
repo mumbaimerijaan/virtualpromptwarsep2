@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { X, Send, UserPlus, Search, Edit3, CheckSquare, BookOpen, CheckCircle2 } from 'lucide-react';
+import { X, Send, UserPlus, Search, Edit3, CheckSquare, BookOpen, CheckCircle2, ShieldCheck, ChevronRight, ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import botImg from '../assets/bot.png';
 import botBgImg from '../assets/bot-bg.png';
@@ -126,46 +126,89 @@ export const ChatModal = ({ isOpen, onClose }) => {
             </div>
           </div>
           
-          <button 
-            onClick={onClose}
-            className="p-2 -mr-2 bg-slate-50 text-slate-400 rounded-full hover:bg-slate-100 hover:text-slate-600 transition-colors border border-slate-100"
-            aria-label="Close Assistant"
-          >
-            <X size={20} strokeWidth={2.5} />
-          </button>
+          <div className="flex gap-2">
+            {hasInteracted && (
+              <button 
+                onClick={() => {
+                  setMessages(INITIAL_MESSAGES);
+                  setHasInteracted(false);
+                }}
+                className="p-2 bg-slate-50 text-slate-500 rounded-full hover:bg-slate-100 hover:text-slate-700 transition-colors border border-slate-100 flex items-center gap-1 px-3"
+                aria-label="Back to topics"
+              >
+                <ArrowLeft size={16} strokeWidth={2.5} />
+                <span className="text-[12px] font-bold">Back</span>
+              </button>
+            )}
+            <button 
+              onClick={onClose}
+              className="p-2 -mr-2 bg-slate-50 text-slate-400 rounded-full hover:bg-slate-100 hover:text-slate-600 transition-colors border border-slate-100"
+              aria-label="Close Assistant"
+            >
+              <X size={20} strokeWidth={2.5} />
+            </button>
+          </div>
         </div>
 
         {/* Chat Area */}
         <div className="flex-1 overflow-y-auto bg-[#F4F6FF] p-5 pb-8 relative">
-          
           <div className="flex flex-col gap-4">
-            {messages.map((msg) => (
-              <div key={msg.id} className={`flex flex-col ${msg.type === 'user' ? 'items-end' : 'items-start'}`}>
-                
-                {/* Special rendering for the welcome message to match design */}
-                {msg.isWelcome && !hasInteracted && (
-                  <div className="w-full relative rounded-[24px] bg-white overflow-hidden shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-slate-100/50 mb-4">
-                     <div className="absolute top-0 right-0 w-[55%] h-full pointer-events-none">
-                       <img src={botBgImg} alt="" className="w-full h-full object-cover opacity-90 object-left" />
-                     </div>
-                     <div className="relative z-10 p-6 pr-24 w-[75%]">
-                        <p className="text-[15px] text-slate-700 leading-relaxed whitespace-pre-wrap">{msg.content}</p>
-                     </div>
-                  </div>
-                )}
+            {/* Special Welcome State with Image Background containing the Input Box */}
+            {!hasInteracted && (
+              <div className="w-full relative mb-4 rounded-[24px] shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] overflow-hidden bg-white min-h-[340px]">
+                 <img src={botBgImg} alt="" className="absolute inset-0 w-full h-full object-cover pointer-events-none block" />
+                 
+                 {/* Top Left Text area overlaid on image bubble */}
+                 <div className="absolute top-0 left-0 w-[55%] h-[55%] z-10 p-5 flex flex-col justify-center">
+                    <p className="text-[14.5px] text-slate-700 leading-snug whitespace-pre-wrap font-medium">{INITIAL_MESSAGES[0].content}</p>
+                 </div>
+                 
+                 {/* Bottom Input Area overlaid exactly on the bottom white box of the image */}
+                 <div className="absolute bottom-0 left-0 w-full h-[45%] z-10 p-4 flex flex-col justify-end">
+                    <div className="relative flex items-center bg-slate-50/80 backdrop-blur-sm rounded-full border border-slate-200 focus-within:border-indigo-400 focus-within:ring-2 focus-within:ring-indigo-100 focus-within:bg-white transition-all shadow-sm">
+                      <input
+                        type="text"
+                        value={input}
+                        onChange={(e) => setInput(e.target.value)}
+                        onKeyDown={handleKeyPress}
+                        placeholder="Type your question here..."
+                        className="w-full bg-transparent border-none py-3.5 pl-5 pr-14 text-[14px] text-slate-800 placeholder:text-slate-400 focus:outline-none rounded-full"
+                        disabled={isLoading}
+                      />
+                      <button 
+                        onClick={handleSend}
+                        disabled={!input.trim() || isLoading}
+                        className="absolute right-1.5 p-2.5 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 disabled:bg-slate-200 disabled:text-slate-400 transition-colors shadow-sm"
+                        aria-label="Send message"
+                      >
+                        <Send size={16} className={input.trim() ? "translate-x-[-1px] translate-y-[1px]" : ""} />
+                      </button>
+                    </div>
+                    
+                    {/* Quick chips positioned just below the input field inside the white image box */}
+                    <div className="flex items-center gap-2 mt-3 px-1 overflow-x-auto pb-1 no-scrollbar">
+                      <span className="flex-shrink-0 px-3 py-1.5 border border-slate-200/60 rounded-full text-[11px] font-medium text-slate-600 bg-white shadow-sm">Election date</span>
+                      <span className="flex-shrink-0 px-3 py-1.5 border border-slate-200/60 rounded-full text-[11px] font-medium text-slate-600 bg-white shadow-sm">ID documents</span>
+                      <span className="flex-shrink-0 px-3 py-1.5 border border-slate-200/60 rounded-full text-[11px] font-medium text-slate-600 bg-white shadow-sm">Polling station</span>
+                      <span className="flex-shrink-0 px-3 py-1.5 border border-slate-200/60 rounded-full text-[11px] font-medium text-slate-600 bg-white shadow-sm">EVM</span>
+                    </div>
+                 </div>
+              </div>
+            )}
 
+            {/* Normal Chat History (rendered only after interaction starts) */}
+            {hasInteracted && messages.map((msg) => (
+              <div key={msg.id} className={`flex flex-col ${msg.type === 'user' ? 'items-end' : 'items-start'}`}>
                 {/* Normal Messages */}
-                {!msg.isWelcome && (
-                  <div 
-                    className={`max-w-[85%] rounded-[20px] px-4 py-3 text-[14.5px] leading-relaxed shadow-sm ${
-                      msg.type === 'user' 
-                        ? 'bg-indigo-600 text-white rounded-br-sm' 
-                        : 'bg-white text-slate-700 rounded-bl-sm border border-slate-100'
-                    }`}
-                  >
-                    {msg.content}
-                  </div>
-                )}
+                <div 
+                  className={`max-w-[85%] rounded-[20px] px-4 py-3 text-[14.5px] leading-relaxed shadow-sm ${
+                    msg.type === 'user' 
+                      ? 'bg-indigo-600 text-white rounded-br-sm' 
+                      : 'bg-white text-slate-700 rounded-bl-sm border border-slate-100'
+                  }`}
+                >
+                  {msg.content}
+                </div>
 
                 {/* Bot Suggestions rendering */}
                 {msg.type === 'bot' && msg.suggestions && msg.suggestions.length > 0 && (
@@ -174,7 +217,6 @@ export const ChatModal = ({ isOpen, onClose }) => {
                        <button
                          key={idx}
                          onClick={() => {
-                           // If it's a specific route mapping suggestion or intent mapping
                            const route = msg.intent !== "UNKNOWN" && msg.intent !== "ERROR" ? msg.intent : suggestion;
                            handleRoute(route);
                          }}
@@ -189,9 +231,9 @@ export const ChatModal = ({ isOpen, onClose }) => {
               </div>
             ))}
 
-            {/* Popular Topics (only shown if user hasn't typed yet) */}
+            {/* Popular Topics Grid */}
             {!hasInteracted && (
-              <div className="mt-2 animate-fade-in">
+              <div className="mt-1 animate-fade-in">
                 <h3 className="text-[13px] font-bold text-slate-800 mb-3 ml-1">Popular topics</h3>
                 <div className="grid grid-cols-2 gap-2.5">
                   <TopicCard icon={UserPlus} title="How do I register as a voter?" color="text-emerald-500" bg="bg-emerald-50" onClick={() => handleRoute('/register')} />
@@ -209,12 +251,6 @@ export const ChatModal = ({ isOpen, onClose }) => {
                    </div>
                    <ChevronRight size={16} className="text-slate-400" />
                 </button>
-                
-                {/* Privacy disclaimer */}
-                <div className="mt-4 flex items-center justify-center gap-2 py-3 px-4 bg-white/50 rounded-xl border border-white">
-                  <ShieldCheck size={14} className="text-slate-400" />
-                  <span className="text-[10px] font-medium text-slate-500 text-center">Your data is private and secure. We never share your personal details.</span>
-                </div>
               </div>
             )}
 
@@ -234,40 +270,34 @@ export const ChatModal = ({ isOpen, onClose }) => {
           </div>
         </div>
 
-        {/* Input Area */}
-        <div className="bg-white p-4 border-t border-slate-100/50 pb-6 sm:pb-4 rounded-b-3xl">
-          <div className="relative flex items-center bg-slate-50 rounded-full border border-slate-200 focus-within:border-indigo-400 focus-within:ring-2 focus-within:ring-indigo-100 focus-within:bg-white transition-all">
-            <input
-              type="text"
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              onKeyDown={handleKeyPress}
-              placeholder="Type your question here..."
-              className="w-full bg-transparent border-none py-3.5 pl-5 pr-14 text-[14px] text-slate-800 placeholder:text-slate-400 focus:outline-none rounded-full"
-              disabled={isLoading}
-            />
-            <button 
-              onClick={handleSend}
-              disabled={!input.trim() || isLoading}
-              className="absolute right-1.5 p-2.5 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 disabled:bg-slate-200 disabled:text-slate-400 transition-colors shadow-sm"
-              aria-label="Send message"
-            >
-              <Send size={16} className={input.trim() ? "translate-x-[-1px] translate-y-[1px]" : ""} />
-            </button>
-          </div>
-          
-          {/* Quick chips below input for suggestions */}
-          {!hasInteracted && (
-            <div className="flex items-center gap-2 mt-3 px-2 overflow-x-auto pb-1 no-scrollbar">
-              <span className="flex-shrink-0 px-3 py-1.5 border border-slate-200 rounded-full text-[11px] font-medium text-slate-600 bg-white">Election date</span>
-              <span className="flex-shrink-0 px-3 py-1.5 border border-slate-200 rounded-full text-[11px] font-medium text-slate-600 bg-white">ID documents</span>
-              <span className="flex-shrink-0 px-3 py-1.5 border border-slate-200 rounded-full text-[11px] font-medium text-slate-600 bg-white">Polling station</span>
-              <span className="flex-shrink-0 px-3 py-1.5 border border-slate-200 rounded-full text-[11px] font-medium text-slate-600 bg-white">EVM</span>
+        {/* Input Area when interacting (Moves out of the banner) */}
+        {hasInteracted && (
+          <div className="bg-white p-4 border-t border-slate-100/50 pb-6 sm:pb-4 rounded-b-3xl">
+            <div className="relative flex items-center bg-slate-50 rounded-full border border-slate-200 focus-within:border-indigo-400 focus-within:ring-2 focus-within:ring-indigo-100 focus-within:bg-white transition-all">
+              <input
+                type="text"
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                onKeyDown={handleKeyPress}
+                placeholder="Type your question here..."
+                className="w-full bg-transparent border-none py-3.5 pl-5 pr-14 text-[14px] text-slate-800 placeholder:text-slate-400 focus:outline-none rounded-full"
+                disabled={isLoading}
+              />
+              <button 
+                onClick={handleSend}
+                disabled={!input.trim() || isLoading}
+                className="absolute right-1.5 p-2.5 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 disabled:bg-slate-200 disabled:text-slate-400 transition-colors shadow-sm"
+                aria-label="Send message"
+              >
+                <Send size={16} className={input.trim() ? "translate-x-[-1px] translate-y-[1px]" : ""} />
+              </button>
             </div>
-          )}
-          
-          {/* Footer inside modal */}
-          <div className="mt-4 flex items-center justify-center gap-1.5 opacity-60">
+          </div>
+        )}
+
+        {/* Footer inside modal - Always visible */}
+        <div className="bg-white py-3 border-t border-slate-50 rounded-b-3xl mt-auto">
+          <div className="flex items-center justify-center gap-1.5 opacity-60">
              <div className="w-4 h-4 flex items-center justify-center">
                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" alt="Emblem of India" className="w-full h-full object-contain" onError={(e) => e.target.style.display='none'} />
              </div>
@@ -298,4 +328,3 @@ const TopicCard = ({ icon: Icon, title, color, bg, onClick }) => (
 
 // We need ChevronRight locally for the modal as well, so import it up top if not already. 
 // Adding it here since it was missing from the import list in the previous snippet
-import { ChevronRight } from 'lucide-react';
