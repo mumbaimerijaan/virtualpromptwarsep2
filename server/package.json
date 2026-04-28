@@ -1,0 +1,16 @@
+{
+  "name": "virtual-prompt-wars-ep2-server",
+  "version": "1.0.0",
+  "description": "Dummy backend to proxy AI requests",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@google/genai": "^1.50.1",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.1"
+  }
+}

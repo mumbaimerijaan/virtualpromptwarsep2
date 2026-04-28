@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import botImg from '../assets/bot.png';
 import botBgImg from '../assets/bot-bg.png';
 import { classifyIntent } from '../lib/gemini';
+import { subscribeToChatMessages, saveMessageToFirestore } from '../services/chatService';
 
 const INITIAL_MESSAGES = [
   {
@@ -18,9 +19,67 @@ export const ChatModal = ({ isOpen, onClose }) => {
   const [messages, setMessages] = useState(INITIAL_MESSAGES);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [isSyncing, setIsSyncing] = useState(false);
   const [hasInteracted, setHasInteracted] = useState(false);
+  const [sessionId, setSessionId] = useState(null);
+  
   const messagesEndRef = useRef(null);
+  const modalRef = useRef(null);
   const navigate = useNavigate();
+
+  // Initialize Session ID
+  useEffect(() => {
+    let storedSession = localStorage.getItem('saathi_session_id');
+    if (!storedSession) {
+      storedSession = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+      localStorage.setItem('saathi_session_id', storedSession);
+    }
+    setSessionId(storedSession);
+  }, []);
+
+  // Firestore Subscription
+  useEffect(() => {
+    if (isOpen && sessionId && hasInteracted) {
+      setIsSyncing(true);
+      const unsubscribe = subscribeToChatMessages(sessionId, (newMessages) => {
+        if (newMessages.length > 0) {
+          setMessages([...INITIAL_MESSAGES, ...newMessages]);
+        }
+        setIsSyncing(false);
+      });
+      return () => unsubscribe();
+    }
+  }, [isOpen, sessionId, hasInteracted]);
+
+  // Keyboard Trap & Focus Management
+  useEffect(() => {
+    if (isOpen && modalRef.current) {
+      const focusableElements = modalRef.current.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      const handleTabKey = (e) => {
+        if (e.key === 'Tab') {
+          if (e.shiftKey) {
+            if (document.activeElement === firstElement) {
+              lastElement.focus();
+              e.preventDefault();
+            }
+          } else {
+            if (document.activeElement === lastElement) {
+              firstElement.focus();
+              e.preventDefault();
+            }
+          }
+        }
+      };
+
+      document.addEventListener('keydown', handleTabKey);
+      return () => document.removeEventListener('keydown', handleTabKey);
+    }
+  }, [isOpen]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -41,7 +100,6 @@ export const ChatModal = ({ isOpen, onClose }) => {
       'UPDATE_DETAILS': '/update',
       'VOTING_PROCESS': '/vote-process',
       'LEARN_ELECTIONS': '/learn',
-      // Direct paths for quick actions
       '/register': '/register',
       '/check': '/check',
       '/update': '/update',
@@ -63,29 +121,32 @@ export const ChatModal = ({ isOpen, onClose }) => {
     const userMessage = input.trim();
     setInput('');
     setHasInteracted(true);
-    
-    // Add user message
-    setMessages(prev => [...prev, { id: Date.now(), type: 'user', content: userMessage }]);
     setIsLoading(true);
-
+    
     try {
+      // 1. Save User Message to Firestore
+      await saveMessageToFirestore(sessionId, { type: 'user', content: userMessage });
+
+      // 2. Call backend proxy / AI
       const response = await classifyIntent(userMessage);
       
-      setMessages(prev => [...prev, {
-        id: Date.now() + 1,
+      // 3. Save Bot Response to Firestore
+      await saveMessageToFirestore(sessionId, {
         type: 'bot',
         content: response.message,
         intent: response.intent,
         suggestions: response.suggestions
-      }]);
+      });
+
     } catch (error) {
-      setMessages(prev => [...prev, {
-        id: Date.now() + 1,
+      console.error("Chat flow error:", error);
+      // Fallback message saving
+      await saveMessageToFirestore(sessionId, {
         type: 'bot',
-        content: "Sorry, I'm having trouble connecting right now. Please try again or use the popular topics above.",
+        content: "Sorry, I'm having trouble connecting right now.",
         intent: "ERROR",
         suggestions: ["Register as a voter", "Check voter list", "How to vote"]
-      }]);
+      });
     } finally {
       setIsLoading(false);
     }
@@ -97,9 +158,22 @@ export const ChatModal = ({ isOpen, onClose }) => {
     }
   };
 
+  const getAriaStatus = () => {
+    if (isLoading) return "Bot is auditing the prompt...";
+    if (isSyncing) return "Synchronizing chat history...";
+    if (messages.length > 1 && !isLoading) return "Insights ready";
+    return "";
+  };
+
   return (
-    <div className="fixed inset-0 z-[100] flex justify-center items-end sm:items-center bg-slate-900/40 backdrop-blur-sm sm:p-4 transition-opacity">
+    <div className="fixed inset-0 z-[100] flex justify-center items-end sm:items-center bg-slate-900/40 backdrop-blur-sm sm:p-4 transition-opacity" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      {/* Accessibility Narrator */}
+      <div aria-live="polite" aria-atomic="true" className="sr-only">
+        {getAriaStatus()}
+      </div>
+
       <div 
+        ref={modalRef}
         className="w-full max-w-[420px] bg-[#F4F6FF] rounded-t-3xl sm:rounded-3xl shadow-2xl flex flex-col h-[85vh] sm:h-[80vh] overflow-hidden animate-slide-up"
       >
         {/* Header */}

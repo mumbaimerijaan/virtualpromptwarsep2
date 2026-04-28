@@ -42,13 +42,17 @@ function HomePage() {
   );
 }
 
+import { initFirebase } from './lib/firebase';
+
 function App() {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Listen to the custom event from ActionCardList
+  // Listen to the custom event from ActionCardList and initialize Firebase AppCheck
   React.useEffect(() => {
+    initFirebase();
+    
     const handleOpenChat = () => setIsChatOpen(true);
     window.addEventListener('open-chat', handleOpenChat);
     return () => window.removeEventListener('open-chat', handleOpenChat);
