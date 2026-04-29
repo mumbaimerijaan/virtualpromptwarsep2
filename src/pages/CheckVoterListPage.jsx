@@ -32,7 +32,12 @@ const InfoModal = ({ isOpen, onClose, title, children }) => {
       >
         <div className="px-6 py-5 border-b border-slate-100 flex justify-between items-center bg-slate-50/50">
           <h3 className="font-bold text-slate-800 text-[18px]">{title}</h3>
-          <button onClick={onClose} className="p-2 text-slate-400 hover:bg-slate-200 rounded-full transition-colors">
+          <button 
+            onClick={onClose} 
+            autoFocus
+            className="p-2 text-slate-400 hover:bg-slate-200 rounded-full transition-colors"
+            aria-label="Close Modal"
+          >
             <X size={20} />
           </button>
         </div>

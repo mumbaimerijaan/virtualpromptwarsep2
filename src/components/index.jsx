@@ -191,6 +191,32 @@ export const UpdatesCard = ({ onClick }) => (
   </div>
 );
 
+export const EvaluationCard = ({ onClick }) => (
+  <div className="bg-indigo-50 border border-indigo-100 rounded-[32px] p-6 mb-10 relative overflow-hidden group transition-all hover:shadow-lg hover:shadow-indigo-500/5">
+    <div className="relative z-10">
+      <div className="flex items-center gap-3 mb-4">
+        <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-indigo-600 shadow-sm">
+          <ShieldAlert size={20} />
+        </div>
+        <h3 className="font-bold text-indigo-900 text-[16px]">Election Process Evaluation</h3>
+      </div>
+      <p className="text-[13px] text-indigo-900/60 font-medium leading-relaxed mb-6 max-w-[240px]">
+        Help us improve the democratic experience by sharing feedback on your voting journey.
+      </p>
+      <button 
+        onClick={onClick}
+        className="w-full bg-white text-indigo-600 py-3.5 rounded-2xl font-bold text-[14px] shadow-sm hover:bg-indigo-50 transition-colors flex items-center justify-center gap-2 border border-indigo-100/50"
+      >
+        Report Friction / Give Feedback <ChevronRight size={16} />
+      </button>
+    </div>
+    {/* Abstract background deco */}
+    <div className="absolute right-[-20px] bottom-[-20px] opacity-10 pointer-events-none group-hover:scale-110 transition-transform">
+      <Fingerprint size={120} className="text-indigo-900" />
+    </div>
+  </div>
+);
+
 export const Footer = () => (
   <footer className="py-6 flex items-center justify-center gap-3 border-t border-slate-100 mt-auto bg-[#F8FAFC]">
     <div className="w-8 h-10 flex items-center justify-center opacity-80 mix-blend-multiply">

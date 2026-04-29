@@ -296,7 +296,11 @@ export const ChatModal = ({ isOpen, onClose }) => {
         </div>
 
         {/* Chat Area */}
-        <div className="flex-1 overflow-y-auto bg-[#F4F6FF] p-5 pb-8 relative">
+        <div 
+          className="flex-1 overflow-y-auto bg-[#F4F6FF] p-5 pb-8 relative no-scrollbar scroll-smooth"
+          aria-live="polite"
+          aria-relevant="additions"
+        >
           <div className="flex flex-col gap-4">
             {/* Special Welcome State with Image Background containing the Input Box */}
             {!hasInteracted && (

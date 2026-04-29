@@ -1,11 +1,12 @@
 import React, { useState, Suspense } from 'react';
 import { Routes, Route, useNavigate, useLocation, Navigate } from 'react-router-dom';
-import { Header, Hero, ActionCardList, TrustBadge, UpdatesCard, Footer, BottomNav } from './components';
+import { Header, Hero, ActionCardList, TrustBadge, UpdatesCard, EvaluationCard, Footer, BottomNav } from './components';
 import ScrollToTop from './components/ScrollToTop';
 import { ChatModal } from './components/ChatModal';
 import { RouteAnnouncer } from './components/RouteAnnouncer';
 import { ROUTES } from './lib/routes';
 import { initFirebase } from './lib/firebase';
+import { initGA, trackPageView } from './lib/AnalyticsService';
 
 // Lazy loading all 14 pages for optimal code splitting
 const RegisterVoterPage = React.lazy(() => import('./pages').then(m => ({ default: m.RegisterVoterPage })));
@@ -40,6 +41,7 @@ function HomePage() {
         break;
       case 'faq': navigate(ROUTES.FAQ); break;
       case 'track_status': navigate(ROUTES.STATUS); break;
+      case 'report_issue': navigate(ROUTES.ISSUE_RESOLUTION); break;
       default: console.log(`Action triggered: ${actionName}`);
     }
   };
@@ -49,6 +51,7 @@ function HomePage() {
       <Hero />
       <ActionCardList onAction={handleAction} />
       <UpdatesCard onClick={() => handleAction('updates')} />
+      <EvaluationCard onClick={() => handleAction('report_issue')} />
       <FloatingAssistant onClick={() => handleAction('intent_input')} />
       <TrustBadge />
     </main>
@@ -58,6 +61,14 @@ function HomePage() {
 function App() {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const location = useLocation();
+
+  React.useEffect(() => {
+    initGA();
+  }, []);
+
+  React.useEffect(() => {
+    trackPageView(location.pathname);
+  }, [location]);
 
   // Initialize Firebase AppCheck and Chat Event Listener
   React.useEffect(() => {
