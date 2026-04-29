@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { X, Send, UserPlus, Search, Edit3, CheckSquare, BookOpen, CheckCircle2, ShieldCheck, ChevronRight, ArrowLeft } from 'lucide-react';
+import { X, Send, UserPlus, Search, Edit3, CheckSquare, BookOpen, CheckCircle2, ShieldCheck, ChevronRight, ArrowLeft, Clock } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import botImg from '../assets/bot.png';
 import botBgImg from '../assets/bot-bg.png';
+import faqData from '../assets/faqs_full.json';
 import { classifyIntent } from '../lib/gemini';
 import { subscribeToChatMessages, saveMessageToFirestore } from '../services/chatService';
+import { ROUTES } from '../lib/routes';
 
 const INITIAL_MESSAGES = [
   {
@@ -95,16 +97,17 @@ export const ChatModal = ({ isOpen, onClose }) => {
 
   const handleRoute = (intentOrPath) => {
     const routeMap = {
-      'REGISTER_VOTER': '/register',
-      'CHECK_NAME': '/check',
-      'UPDATE_DETAILS': '/update',
-      'VOTING_PROCESS': '/vote-process',
-      'LEARN_ELECTIONS': '/learn',
-      '/register': '/register',
-      '/check': '/check',
-      '/update': '/update',
-      '/vote-process': '/vote-process',
-      '/learn': '/learn',
+      'REGISTER_VOTER': ROUTES.REGISTER,
+      'CHECK_NAME': ROUTES.CHECK_VOTER_LIST,
+      'UPDATE_DETAILS': ROUTES.UPDATE_DETAILS,
+      'VOTING_PROCESS': ROUTES.VOTING_PROCESS,
+      'LEARN_ELECTIONS': ROUTES.HOW_ELECTIONS_WORK,
+      'TRACK_STATUS': ROUTES.STATUS,
+      [ROUTES.REGISTER]: ROUTES.REGISTER,
+      [ROUTES.CHECK_VOTER_LIST]: ROUTES.CHECK_VOTER_LIST,
+      [ROUTES.UPDATE_DETAILS]: ROUTES.UPDATE_DETAILS,
+      [ROUTES.VOTING_PROCESS]: ROUTES.VOTING_PROCESS,
+      [ROUTES.HOW_ELECTIONS_WORK]: ROUTES.HOW_ELECTIONS_WORK,
     };
 
     const targetRoute = routeMap[intentOrPath] || null;
@@ -113,6 +116,49 @@ export const ChatModal = ({ isOpen, onClose }) => {
       onClose();
       navigate(targetRoute);
     }
+  };
+
+  const findPageMatch = (query) => {
+    const q = query.toLowerCase();
+    const pageMap = [
+      { keywords: ['register', 'form 6', 'new voter', 'apply', 'enroll'], route: ROUTES.REGISTER, title: 'Register as a Voter' },
+      { keywords: ['status', 'track', 'application', 'reference', 'pending'], route: ROUTES.STATUS, title: 'Track Application Status' },
+      { keywords: ['list', 'name', 'check name', 'epic', 'search', 'electoral roll'], route: ROUTES.CHECK_VOTER_LIST, title: 'Check Voter List' },
+      { keywords: ['update', 'correct', 'change', 'details', 'form 8'], route: ROUTES.UPDATE_DETAILS, title: 'Update Voter Details' },
+      { keywords: ['vote', 'how to vote', 'process', 'booth', 'evm', 'vvpat'], route: ROUTES.VOTING_PROCESS, title: 'Voting Process' },
+      { keywords: ['understand', 'learn', 'how it works', 'about elections'], route: ROUTES.HOW_ELECTIONS_WORK, title: 'Understand Elections' },
+      { keywords: ['updates', 'news', 'announcement', 'latest'], route: ROUTES.UPDATES, title: 'Latest Updates' },
+      { keywords: ['faq', 'frequently asked', 'help'], route: ROUTES.FAQ, title: 'FAQs' }
+    ];
+
+    for (const page of pageMap) {
+      if (page.keywords.some(k => q.includes(k))) {
+        return page;
+      }
+    }
+    return null;
+  };
+
+  const findFAQMatch = (query) => {
+    const q = query.toLowerCase();
+    let bestMatch = null;
+    let maxScore = 0;
+
+    faqData.tabs.forEach(tab => {
+      tab.faqs.forEach(faq => {
+        let score = 0;
+        if (faq.question.toLowerCase().includes(q)) score += 10;
+        if (faq.search_text?.toLowerCase().includes(q)) score += 5;
+        if (faq.keywords?.some(k => q.includes(k.toLowerCase()))) score += 2;
+        
+        if (score > maxScore) {
+          maxScore = score;
+          bestMatch = faq;
+        }
+      });
+    });
+
+    return maxScore >= 5 ? bestMatch : null;
   };
 
   const handleSend = async () => {
@@ -127,10 +173,35 @@ export const ChatModal = ({ isOpen, onClose }) => {
       // 1. Save User Message to Firestore
       await saveMessageToFirestore(sessionId, { type: 'user', content: userMessage });
 
-      // 2. Call backend proxy / AI
+      // 2. Try Local Page Match (Priority 1)
+      const pageMatch = findPageMatch(userMessage);
+      if (pageMatch) {
+        await saveMessageToFirestore(sessionId, {
+          type: 'bot',
+          content: `I can help you with that! You can access the ${pageMatch.title} page directly here.`,
+          intent: pageMatch.route,
+          suggestions: ["Go to Page", "Something else?"]
+        });
+        setIsLoading(false);
+        return;
+      }
+
+      // 3. Try Local FAQ Match (Priority 2)
+      const faqMatch = findFAQMatch(userMessage);
+      if (faqMatch) {
+        await saveMessageToFirestore(sessionId, {
+          type: 'bot',
+          content: faqMatch.answer,
+          intent: 'FAQ_REPLY',
+          suggestions: faqMatch.keywords?.slice(0, 3) || ["More FAQs", "Main Menu"]
+        });
+        setIsLoading(false);
+        return;
+      }
+
+      // 4. Fallback to AI backend (Priority 3 & 4)
       const response = await classifyIntent(userMessage);
       
-      // 3. Save Bot Response to Firestore
       await saveMessageToFirestore(sessionId, {
         type: 'bot',
         content: response.message,
@@ -174,7 +245,7 @@ export const ChatModal = ({ isOpen, onClose }) => {
 
       <div 
         ref={modalRef}
-        className="w-full max-w-[420px] bg-[#F4F6FF] rounded-t-3xl sm:rounded-3xl shadow-2xl flex flex-col h-[85vh] sm:h-[80vh] overflow-hidden animate-slide-up"
+        className="w-full md:w-[60%] bg-[#F4F6FF] rounded-t-3xl sm:rounded-3xl shadow-2xl flex flex-col h-[85vh] sm:h-[80vh] overflow-hidden animate-slide-up"
       >
         {/* Header */}
         <div className="bg-white px-5 py-4 rounded-t-3xl sm:rounded-t-3xl relative z-10 flex items-center justify-between shadow-sm">
@@ -310,13 +381,13 @@ export const ChatModal = ({ isOpen, onClose }) => {
               <div className="mt-1 animate-fade-in">
                 <h3 className="text-[13px] font-bold text-slate-800 mb-3 ml-1">Popular topics</h3>
                 <div className="grid grid-cols-2 gap-2.5">
-                  <TopicCard icon={UserPlus} title="How do I register as a voter?" color="text-emerald-500" bg="bg-emerald-50" onClick={() => handleRoute('/register')} />
-                  <TopicCard icon={Search} title="Check my name in voter list" color="text-blue-500" bg="bg-blue-50" onClick={() => handleRoute('/check')} />
-                  <TopicCard icon={Edit3} title="Update or correct my details" color="text-orange-500" bg="bg-orange-50" onClick={() => handleRoute('/update')} />
-                  <TopicCard icon={CheckSquare} title="How do I vote? (Voting process)" color="text-indigo-500" bg="bg-indigo-50" onClick={() => handleRoute('/vote-process')} />
+                  <TopicCard icon={UserPlus} title="How do I register as a voter?" color="text-emerald-500" bg="bg-emerald-50" onClick={() => handleRoute(ROUTES.REGISTER)} />
+                  <TopicCard icon={Search} title="Check my name in voter list" color="text-blue-500" bg="bg-blue-50" onClick={() => handleRoute(ROUTES.CHECK_VOTER_LIST)} />
+                  <TopicCard icon={Edit3} title="Update or correct my details" color="text-orange-500" bg="bg-orange-50" onClick={() => handleRoute(ROUTES.UPDATE_DETAILS)} />
+                  <TopicCard icon={Clock} title="Track my application status" color="text-amber-500" bg="bg-amber-50" onClick={() => handleRoute(ROUTES.STATUS)} />
                 </div>
                 <button 
-                  onClick={() => handleRoute('/learn')}
+                  onClick={() => handleRoute(ROUTES.HOW_ELECTIONS_WORK)}
                   className="w-full mt-2.5 bg-white p-4 rounded-2xl border border-slate-100 shadow-sm flex items-center justify-between hover:bg-slate-50 transition-colors"
                 >
                    <div className="flex items-center gap-3">

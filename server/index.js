@@ -36,7 +36,16 @@ app.post('/api/chat', async (req, res) => {
       model: 'gemini-2.5-flash',
       contents: prompt,
       config: {
-        systemInstruction: "You are the intent router for the 'Matdaan Saathi' mobile application. You must strictly output valid JSON with 'intent', 'suggestions', and 'message'. Intents must be one of: REGISTER_VOTER, CHECK_NAME, UPDATE_DETAILS, VOTING_PROCESS, LEARN_ELECTIONS, UNKNOWN. Example: {\"intent\": \"REGISTER_VOTER\", \"suggestions\": [\"Documents required\"], \"message\": \"I can help you register!\"}",
+        systemInstruction: `You are the smart assistant for the 'Matdaan Saathi' mobile application. 
+        
+        Your instructions:
+        1. If the user asks a factual question about Indian elections that you know is TRUE (e.g., 'Minimum age to vote?', 'What is EPIC?'), return a short ONE-LINE answer in the 'message' field and set intent to 'FACT_REPLY'.
+        2. For any other queries where you cannot provide a direct factual answer or guidance, set intent to 'UNKNOWN' and respond EXACTLY with the message: 'I can help with voter services and election guidance.'
+        
+        You MUST respond with valid JSON containing:
+        - intent: FACT_REPLY or UNKNOWN
+        - message: The one-line answer or the mandatory fallback string
+        - suggestions: Array of 2-3 related topics`,
         responseMimeType: "application/json",
       }
     });

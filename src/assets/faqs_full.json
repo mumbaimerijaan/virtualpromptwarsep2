@@ -1,0 +1,2241 @@
+{
+  "tabs": [
+    {
+      "title": "Resident Electors",
+      "faqs": [
+        {
+          "id": "RES_001",
+          "question": "What are the main categories of electors in India?",
+          "answer": "There are 3 categories of electors in India: –(i) General electors (ii) Oversees (NRI) electors , and (iii) Service Electors.",
+          "keywords": [
+            "are",
+            "the",
+            "of",
+            "main",
+            "categories",
+            "what"
+          ],
+          "search_text": "what are the main categories of electors in india?"
+        },
+        {
+          "id": "RES_002",
+          "question": "What is the relevant date for determining the age of 18 years? Can I get myself registered as a voter on the day when I have completed 18 years of age?",
+          "answer": "According to Section 14 (b) of the Representation of People Act, 1950 the relevant date (qualifying date) for determining the age of an applicant is the first day of January of the year in which the electoral roll after revision is finally published. For example, if you have completed or are completing 18 years of age on any date from and after 2nd January 2013 but upto to 1st January 2014, you will be eligible for registration as a voter in the elector roll going to be finally published in January, 2014",
+          "keywords": [
+            "date",
+            "relevant",
+            "the",
+            "what",
+            "is",
+            "for"
+          ],
+          "search_text": "what is the relevant date for determining the age of 18 years? can i get myself registered as a voter on the day when i have completed 18 years of age?"
+        },
+        {
+          "id": "RES_003",
+          "question": "Can a non-citizen of India become a voter in the electoral rolls in India?",
+          "answer": "No. A person who is not a citizen of India is not eligible for registration as a voter in the electoral rolls in India. Even those who have ceased to be citizens of India on acquiring the citizenship of another country are not eligible to be enrolled in the electoral rolls in India.",
+          "keywords": [
+            "india",
+            "can",
+            "non",
+            "of",
+            "citizen",
+            "a"
+          ],
+          "search_text": "can a non-citizen of india become a voter in the electoral rolls in india?"
+        },
+        {
+          "id": "RES_004",
+          "question": "Can a non-resident Indian settled in foreign land become an elector of electoral roll in India?",
+          "answer": "Yes. According to the provisions of Sec 20A of the Representation of People Act, 1950 by the Representation of the People (Amendment) Act, 2010, a person who is a citizen of India and who has not acquired the citizenship of any other country and is otherwise eligible to be registered as a voter and who is absenting from his place of ordinary residence in India owing to his employment, education or otherwise is eligible to be registered as a voter in the constituency in which his place of residence in India as mentioned in his passport is located.(For more information, please refer to ‘Frequently Asked Questions – Overseas Electors’)",
+          "keywords": [
+            "resident",
+            "can",
+            "non",
+            "a",
+            "settled",
+            "indian"
+          ],
+          "search_text": "can a non-resident indian settled in foreign land become an elector of electoral roll in india?"
+        },
+        {
+          "id": "RES_005",
+          "question": "I am a student staying at the place of study in a hostel / mess far from my native place. I want to get myself registered at my present address of residence. What should I do ?",
+          "answer": "In case of a student residing at the place of study, in hostel or mess managed by the educational institutions or elsewhere will have the option to get himself / herself registered as elector at his / her native place with his / her parents or at the address of hostel / mess where he / she is resident for the time being for pursuing his / her studies. The course pursued by the said students should be recognized by Central / State Governments / Boards / Universities / Deemed Universities and such courses should be of not less than 1 year’s duration. Such student who wants to enroll himself / herself at the hostel / mess will have to attach a bonafide certificate (as per the specimen at Annexure II of Guidelines attached to Form 6 available on the website of Election Commission) from the Headmaster / Principal / Director / Registrar / Dean of his/her educational institution with Form 6.",
+          "keywords": [
+            "at",
+            "student",
+            "i",
+            "am",
+            "a",
+            "staying"
+          ],
+          "search_text": "i am a student staying at the place of study in a hostel / mess far from my native place. i want to get myself registered at my present address of residence. what should i do ?"
+        },
+        {
+          "id": "RES_006",
+          "question": "Where can the list of claims and objections be seen?",
+          "answer": "It can be seen on the website of the Chief Electoral Officer of the State concerned. It also can be seen on the notice board at the office of the Electoral Registration Officer.",
+          "keywords": [
+            "list",
+            "can",
+            "the",
+            "of",
+            "claims",
+            "where"
+          ],
+          "search_text": "where can the list of claims and objections be seen?"
+        },
+        {
+          "id": "RES_007",
+          "question": "How will an applicant know that his/her name is included in the electoral roll?",
+          "answer": "The decision of the Electoral Registration Officer will be communicated to the applicant by post on his address given by him in Form 6 and also by SMS on the mobile number given by him in Form 6. Electoral rolls are also available on the website of the Chief Electoral Officer of the State concerned and can be seen by anybody.",
+          "keywords": [
+            "how",
+            "an",
+            "will",
+            "know",
+            "that",
+            "applicant"
+          ],
+          "search_text": "how will an applicant know that his/her name is included in the electoral roll?"
+        },
+        {
+          "id": "RES_008",
+          "question": "How can corrections be made if there are some mistakes in the entries in the electoral roll pertaining to electors?",
+          "answer": "For correction of mistakes in electoral rolls, an application in Form 8 is to be submitted to the Electoral Registration Officer concerned.",
+          "keywords": [
+            "corrections",
+            "can",
+            "how",
+            "if",
+            "made",
+            "be"
+          ],
+          "search_text": "how can corrections be made if there are some mistakes in the entries in the electoral roll pertaining to electors?"
+        },
+        {
+          "id": "RES_009",
+          "question": "I have shifted from my residence where I am registered an elector to some other place. How do I ensure that I am enrolled in my new place of residence?",
+          "answer": "In case the new residence is in the same constituency, please fill Form 8A, otherwise fill up Form 6 and submit to the Electoral Registration Officer / Assistant Electoral Registration Officer of the area of your new residence.",
+          "keywords": [
+            "residence",
+            "from",
+            "i",
+            "my",
+            "shifted",
+            "have"
+          ],
+          "search_text": "i have shifted from my residence where i am registered an elector to some other place. how do i ensure that i am enrolled in my new place of residence?"
+        },
+        {
+          "id": "RES_010",
+          "question": "I have shifted my residence recently. I have Electors Photo Identity Card (EPIC) with the old address. Can I get new EPIC for the present address?",
+          "answer": "First of all, you have to ensure that you are enrolled in the electoral roll of the concerned Assembly Constituency in which your new address is located. Though, it is not necessary to get your new address changed in EPIC, however, if you want to change address in EPIC, that can be done by making an application with a charge of Rs. 25 to Electoral Registration Officer of the new constituency. The Electoral Registration Officer will issue an EPIC with new address though the number of EPIC will be the same as that of the old EPIC.",
+          "keywords": [
+            "residence",
+            "recently",
+            "i",
+            "my",
+            "shifted",
+            "have"
+          ],
+          "search_text": "i have shifted my residence recently. i have electors photo identity card (epic) with the old address. can i get new epic for the present address?"
+        },
+        {
+          "id": "RES_011",
+          "question": "My EPIC has some errors. What is the procedure to have a new EPIC with correct particulars?",
+          "answer": "You can make an application in Form 8 for rectification of the errors in your EPIC. The Electoral Registration Officer will issue a new EPIC, with the same number, after making the necessary corrections.",
+          "keywords": [
+            "has",
+            "some",
+            "epic",
+            "what",
+            "my",
+            "errors"
+          ],
+          "search_text": "my epic has some errors. what is the procedure to have a new epic with correct particulars?"
+        },
+        {
+          "id": "RES_012",
+          "question": "I have lost my old EPIC. How can I get a new EPIC ?",
+          "answer": "A replacement EPIC can be issued to an elector on the receipt of Form-8 for the purpose, alongwith a copy of FIR/Police Report.",
+          "keywords": [
+            "lost",
+            "epic",
+            "old",
+            "i",
+            "my",
+            "have"
+          ],
+          "search_text": "i have lost my old epic. how can i get a new epic ?"
+        },
+        {
+          "id": "RES_013",
+          "question": "Who can object to the inclusion of names in electoral rolls?",
+          "answer": "Any person who is a voter in the concerned constituency may object to the inclusion of names in electoral roll on the ground that the person whose names is included or is proposed to be included is not eligible to be registered as a voter in that constituency. An objection can be made in Form 7 to the concerned Electoral Registration Officer along with the relevant proof.",
+          "keywords": [
+            "to",
+            "object",
+            "the",
+            "can",
+            "inclusion",
+            "who"
+          ],
+          "search_text": "who can object to the inclusion of names in electoral rolls?"
+        },
+        {
+          "id": "RES_014",
+          "question": "My neighbour / relative has shifted his residence to a new place but his name still continues in the electoral roll. In which Form the application for deletion of his name from the electoral roll can be made?",
+          "answer": "For deletion of name of a shifted / dead / absentee elector from the electoral roll application can be made in Form 7. For deletion of a duplicate entry also, application should be made in Form 7.",
+          "keywords": [
+            "his",
+            "has",
+            "neighbour",
+            "my",
+            "relative",
+            "shifted"
+          ],
+          "search_text": "my neighbour / relative has shifted his residence to a new place but his name still continues in the electoral roll. in which form the application for deletion of his name from the electoral roll can be made?"
+        },
+        {
+          "id": "RES_015",
+          "question": "When can one get registered in electoral roll. Is enrollment is on throughout the year.",
+          "answer": "The Election Commission normally orders revision of existing electoral roll every year sometime in the months of September to October and such revised rolls are finally published in first week of January of the coming year. One can submit claim application (Form 6) during period for lodging claims and objections to Electoral Registration Officer or an officer designated to receive such applications, i.e., Designated Officer. Even after final publication, the rolls are updated continuously and one can get registered anytime during the continuous updation by filing a claim application to Electoral Registration Officer / Assistant Electoral Registration Officer.",
+          "keywords": [
+            "can",
+            "registered",
+            "when",
+            "in",
+            "one",
+            "get"
+          ],
+          "search_text": "when can one get registered in electoral roll. is enrollment is on throughout the year."
+        },
+        {
+          "id": "RES_016",
+          "question": "Can one be enrolled at more than one place?",
+          "answer": "No. A person cannot be enrolled as a voter at more than one place in view of the provisions contained in Sections 17 and 18 of Representation of People Act, 1950. Likewise, no person can be enrolled as an elector more than once in any electoral roll. Any person while applying for fresh enrolment, makes a statement or declaration whether his / her name is already included in the electoral roll of any other constituency, and if such statement/declaration is false and which the applicant either knows or believes to be false or does not believe to be true, he is liable to be punished under section 31 of the Representation of the People Act, 1950.",
+          "keywords": [
+            "at",
+            "can",
+            "more",
+            "enrolled",
+            "one",
+            "be"
+          ],
+          "search_text": "can one be enrolled at more than one place?"
+        },
+        {
+          "id": "RES_017",
+          "question": "If I have a complaint against the order of Electoral Registration Officer, to whom I should make an appeal?",
+          "answer": "During the period of revision, you can file an appeal to the District Election Officer. In the case of application during the process of continuous updation, such appeal against any order of Electoral Registration Officer will lie before the District Magistrate/ Additional DM / Executive Magistrate / District Collector of the District concerned. A further appeal against the order of Appellate Authority will lie before the Chief Electoral Officer of the State.",
+          "keywords": [
+            "if",
+            "i",
+            "complaint",
+            "against",
+            "a",
+            "have"
+          ],
+          "search_text": "if i have a complaint against the order of electoral registration officer, to whom i should make an appeal?"
+        },
+        {
+          "id": "RES_018",
+          "question": "What is the condition for getting registered in electoral roll?",
+          "answer": "Applicant should be i. An Indian citizen, ii. of 18 years or more of age with reference to qualifying dates, iii. ordinary resident of the area concerned",
+          "keywords": [
+            "getting",
+            "condition",
+            "the",
+            "what",
+            "is",
+            "for"
+          ],
+          "search_text": "what is the condition for getting registered in electoral roll?"
+        },
+        {
+          "id": "RES_019",
+          "question": "When will the ERO process the advance claims received with respect to the subsequent qualifying dates of the year?",
+          "answer": "Such advance claims received during Annual Summary Revision and also after final publication shall be disposed of by the EROs in the concerned subsequent quarters only under continuous updation, in the first month of subsequent quarter",
+          "keywords": [
+            "the",
+            "process",
+            "when",
+            "will",
+            "ero"
+          ],
+          "search_text": "when will the ero process the advance claims received with respect to the subsequent qualifying dates of the year?"
+        },
+        {
+          "id": "RES_020",
+          "question": "What is the relevant date for revision of electoral roll after the Election Laws (Amendment) Act, 2021 came into existence?",
+          "answer": "The Annual Summary Revision is conducted with reference to 01st January of the year only, in which the roll is finally published, as qualifying date. During a non election year, no regular revision activities would be there for the subsequent qualifying dates of the year. However, during a year when general election to State Assembly of House of People is due, a second Summary Revision may be conducted w.r.t. the qualifying date proximate to the said general election. However, there would be no restriction on filing of advance application with reference to the subsequent qualifying dates of summary revision in a year and such advance applications will be disposed of under continuous updation.",
+          "keywords": [
+            "date",
+            "relevant",
+            "the",
+            "what",
+            "is",
+            "for"
+          ],
+          "search_text": "what is the relevant date for revision of electoral roll after the election laws (amendment) act, 2021 came into existence?"
+        },
+        {
+          "id": "RES_021",
+          "question": "How can one get registered/enrolled in the electoral roll?",
+          "answer": "One has to file the application for the purpose, in prescribed Form 6(6A in case of overseas Indian), before the Electoral Registration Officer (ERO)/Assistant Electoral Registration Officer (AERO) of the constituency within which the place of ordinary residence of the applicant falls. The application accompanied by copies of the relevant documents can be filed in person before the concerned ERO/AERO or sent by post or can be handed over to the Booth Level Officer of polling area concerned, or can be filed online through NVSP portal/VHA mobile application or on website of Chief Electoral Officer of the concerned state/ECI. While filing Form 6 on line, the copies of necessary documents should also be uploaded.",
+          "keywords": [
+            "can",
+            "registered",
+            "how",
+            "enrolled",
+            "one",
+            "get"
+          ],
+          "search_text": "how can one get registered/enrolled in the electoral roll?"
+        },
+        {
+          "id": "RES_022",
+          "question": "From where registration forms can be obtained?",
+          "answer": "Forms can be downloaded from the website of Election Commission of India. Formsare also available free of cost in offices of Electoral Registration Officers / Assistant Electoral Registration Officers and Booth Level Officers of the concerned polling station areas.",
+          "keywords": [
+            "registration",
+            "from",
+            "forms",
+            "can",
+            "where",
+            "be"
+          ],
+          "search_text": "from where registration forms can be obtained?"
+        },
+        {
+          "id": "RES_023",
+          "question": "Is it mandatory to provide the Aadhaar details of the applicant in the field provided in the Forms for registration?",
+          "answer": "No it is a purely voluntary field and non-submission of Aadhaar details shall not be a ground for the rejection of the application by the Electoral Registration Officer. It is expected from the applicant to furnish the Aadhaar details voluntarily for the sake of purification of electoral roll.",
+          "keywords": [
+            "to",
+            "provide",
+            "it",
+            "the",
+            "is",
+            "mandatory"
+          ],
+          "search_text": "is it mandatory to provide the aadhaar details of the applicant in the field provided in the forms for registration?"
+        },
+        {
+          "id": "RES_024",
+          "question": "I am a student staying at the place of study in a hostel / mess far from my native place. I want to get myself registered at my present address of residence. What should I do?",
+          "answer": "In case of a student residing at the place of study, in hostel or mess managed by the educational institutions or elsewhere will have the option to get himself / herself registered as elector at his / her native place with his / her parents or at the address ofhostel / mess where he / she is resident for the time being for pursuing his / herstudies. The course pursued by the said students should be recognized by Central / State Governments / Boards / Universities / Deemed Universities and such courses should be of not less than 1 year’s duration. Such student who wants to enrol himself / herself at the hostel / mess will have to attach a bonafide certificate (as per the specimen at Annexure II of Guidelines attached to Form 6 available on the website of Election Commission) from the Headmaster / Principal / Director / Registrar / Dean of his/her educational institution with Form 6",
+          "keywords": [
+            "at",
+            "student",
+            "i",
+            "am",
+            "a",
+            "staying"
+          ],
+          "search_text": "i am a student staying at the place of study in a hostel / mess far from my native place. i want to get myself registered at my present address of residence. what should i do?"
+        },
+        {
+          "id": "RES_025",
+          "question": "A homeless person, who is otherwise eligible for registration as an elector, does not possess documentary proof of ordinary residence. What is the procedure of verification in such case?",
+          "answer": "In case of homeless persons, the Booth Level Officer will visit the address given in Form 6 at night to ascertain that the homeless person actually sleeps at the place which is given as his address in Form 6. If the Booth Level Officer is able to verify that the homeless person actually sleeps at that place, no documentary proof of place of residence shall be necessary. Booth Level Officer must visit for more than one night for such verification. After conducting such verification and to the satisfaction of ERO that the person fulfills all the prescribed conditions, necessary action for enrolment shall be done",
+          "keywords": [
+            "otherwise",
+            "is",
+            "homeless",
+            "who",
+            "a",
+            "person"
+          ],
+          "search_text": "a homeless person, who is otherwise eligible for registration as an elector, does not possess documentary proof of ordinary residence. what is the procedure of verification in such case?"
+        },
+        {
+          "id": "RES_026",
+          "question": "I am a tenant and my landlord does not want me to get enrolled. How can I get enrolled as a voter? Who is competent authority to verify claim applications and objections?",
+          "answer": "To get enrolled in the voter list is your statutory right. Please check the electoral roll of your area available on website of Election Commission / Chief Electoral Officer of the state / in office of Electoral Registration Officer / Assistant Electoral Registration Officer. If your name is not included in the roll, please fill up Form 6 and submit it to the ERO/ AERO/ Booth Level Officer",
+          "keywords": [
+            "and",
+            "tenant",
+            "i",
+            "am",
+            "my",
+            "a"
+          ],
+          "search_text": "i am a tenant and my landlord does not want me to get enrolled. how can i get enrolled as a voter? who is competent authority to verify claim applications and objections?"
+        },
+        {
+          "id": "RES_027",
+          "question": "Where the postal address of the Electoral Registration Officers can be obtained from?",
+          "answer": "Postal addresses of all Electoral Registration Officers are available on the website of Election Commission of India / Chief Electoral Officers of respective State / Union Territory (link to which has been provided on the Election Commission of India website)",
+          "keywords": [
+            "postal",
+            "the",
+            "of",
+            "address",
+            "where"
+          ],
+          "search_text": "where the postal address of the electoral registration officers can be obtained from?"
+        },
+        {
+          "id": "RES_028",
+          "question": "If I apply on line, whether I need to send physical signed copy of the form with documents to the Electoral Registration Officer’s address?",
+          "answer": "As soon as the ERO/AERO receives Form 6 filed on line, the same would be downloaded and BLO would be deputed to visit your residence for verification.",
+          "keywords": [
+            "line",
+            "apply",
+            "on",
+            "if",
+            "whether",
+            "i"
+          ],
+          "search_text": "if i apply on line, whether i need to send physical signed copy of the form with documents to the electoral registration officer’s address?"
+        },
+        {
+          "id": "RES_029",
+          "question": "Who is an overseas (NRI) elector? Can an NRI settled in foreign land become anelector of electoral roll in India?",
+          "answer": "An overseas elector is a person who is a citizen of India and who has not acquired citizenship of any other country and is otherwise eligible to be registered as a voter andwho is absenting from his place of ordinary residence in India owing to his employment, education or otherwise is eligible to be registered as a voter in theconstituency in which his place of residence in India as mentioned in his passport is located. According to the provisions of Section 20A of the Representation of the People Act, 1950, an NRI settled in foreign land can become an elector in electoral roll in India.",
+          "keywords": [
+            "elector",
+            "overseas",
+            "an",
+            "is",
+            "who",
+            "nri"
+          ],
+          "search_text": "who is an overseas (nri) elector? can an nri settled in foreign land become anelector of electoral roll in india?"
+        },
+        {
+          "id": "RES_030",
+          "question": "How can an overseas Indian (NRI) get registered / enrolled in the electoral roll?",
+          "answer": "He/she has to file an application for the purpose in prescribed Form 6A before the Electoral Registration Officer / Assistant Electoral Registration Officer of the constituency within which the place of ordinary residence of the applicant in India asgiven in his/her passport falls. The application accompanied by duly self-attested copy of the relevant documents can be filed in person before the concerned ERO/AERO or sent by post addressed to him or can be filed online through NVSP portal/VHA mobile app or on the website of Chief Electoral Officer of the concerned stat/ECI.",
+          "keywords": [
+            "overseas",
+            "can",
+            "how",
+            "an",
+            "nri",
+            "indian"
+          ],
+          "search_text": "how can an overseas indian (nri) get registered / enrolled in the electoral roll?"
+        },
+        {
+          "id": "RES_031",
+          "question": "What documents are required to be enclosed with Form 6A?",
+          "answer": "One recent passport size coloured photograph, duly affixed in Form 6A, photo- copies of the relevant pages of the passport containing photograph, his address in India and all other particulars of the applicant and also the page of passport containing the validvisa endorsement.",
+          "keywords": [
+            "to",
+            "documents",
+            "are",
+            "required",
+            "what",
+            "be"
+          ],
+          "search_text": "what documents are required to be enclosed with form 6a?"
+        },
+        {
+          "id": "RES_032",
+          "question": "Where the entries pertaining to overseas (NRI) elector find place in the electoral roll?",
+          "answer": "Name of overseas elector is included in a separate section for “Overseas Electors” which is the last section of the roll of that particular part / polling station area of the constituency in which his place of residence in India as mentioned in his passport is located.",
+          "keywords": [
+            "pertaining",
+            "to",
+            "overseas",
+            "the",
+            "entries",
+            "where"
+          ],
+          "search_text": "where the entries pertaining to overseas (nri) elector find place in the electoral roll?"
+        },
+        {
+          "id": "RES_033",
+          "question": "Whether Electoral Registration Officer is to be informed of the change in current residential address of the overseas (NRI) electors in the country of his/her residence?",
+          "answer": "Yes. It is the responsibility of the overseas elector to keep the Electoral Registration Officer informed of the change in residential address in the country of his/her residence",
+          "keywords": [
+            "electoral",
+            "registration",
+            "to",
+            "officer",
+            "whether",
+            "is"
+          ],
+          "search_text": "whether electoral registration officer is to be informed of the change in current residential address of the overseas (nri) electors in the country of his/her residence?"
+        },
+        {
+          "id": "RES_034",
+          "question": "Whether Electoral Registration Officer is to be informed when the overseas (NRI) elector returns to India and becomes ordinarily resident in India?",
+          "answer": "Yes. An overseas elector must do so. In such a case, the person can then be registered as a general elector at the place where he is ordinarily resident in India.",
+          "keywords": [
+            "electoral",
+            "registration",
+            "to",
+            "officer",
+            "whether",
+            "is"
+          ],
+          "search_text": "whether electoral registration officer is to be informed when the overseas (nri) elector returns to india and becomes ordinarily resident in india?"
+        },
+        {
+          "id": "RES_035",
+          "question": "How can an overseas (NRI) elector whose name is enrolled in the electoral roll exercise his/her franchise?",
+          "answer": "After enrolment, an overseas (NRI) elector becomes able to cast his/her vote in an election in the Constituency, in person, at the polling station provided for the part where he/she is registered as an overseas (NRI) elector.",
+          "keywords": [
+            "elector",
+            "overseas",
+            "can",
+            "how",
+            "an",
+            "nri"
+          ],
+          "search_text": "how can an overseas (nri) elector whose name is enrolled in the electoral roll exercise his/her franchise?"
+        },
+        {
+          "id": "RES_036",
+          "question": "Is an overseas (NRI) elector issued an EPIC?",
+          "answer": "– An overseas (NRI) elector is not issued an EPIC as he is allowed to cast his vote in an election in the constituency, in person at the polling station on production of his original passport.",
+          "keywords": [
+            "elector",
+            "overseas",
+            "an",
+            "is",
+            "issued",
+            "nri"
+          ],
+          "search_text": "is an overseas (nri) elector issued an epic?"
+        },
+        {
+          "id": "RES_037",
+          "question": "Whether the overseas (NRI) elector should surrender EPIC, if already issued to him, in India?",
+          "answer": "Yes.The overseas elector should surrender EPIC, if already issued to him, in India, alongwith submission of Form 6 A.",
+          "keywords": [
+            "should",
+            "elector",
+            "overseas",
+            "the",
+            "whether",
+            "nri"
+          ],
+          "search_text": "whether the overseas (nri) elector should surrender epic, if already issued to him, in india?"
+        },
+        {
+          "id": "RES_038",
+          "question": "Who is a service voter?",
+          "answer": "Service voter is a voter having service qualification. According to the provisions of sub-section (8) of Section 20 of Representation of the People Act, 1950, service qualificationmeans –(a) Being a member of the armed Forces of the Union; or(b) Being a member of a force to which provisions of the Army Act, 1950 (46 of 1950), have been made applicable whether with or without modification;(c) Being a member of an Armed Police Force of a State, and serving outside that state; or(d) Being a person who is employed under the Government of India, in a post outside India",
+          "keywords": [
+            "service",
+            "voter",
+            "is",
+            "who",
+            "a"
+          ],
+          "search_text": "who is a service voter?"
+        },
+        {
+          "id": "RES_039",
+          "question": "What are the application Forms in which various categories of service voters have to apply for enrollment as elector?",
+          "answer": "Following are the application Forms in which various categories of service voters are to make application for enrollment as service voter: -1. Members of Armed Forces – Form 22. Members of Armed Police Force of a State, serving outside that State – Form 2 A3. Persons employed under Government of India on post outside India – Form 3However, if a service personnel has opted to get himself enrolled as general elector at place of his posting, where he is actually residing, he will have to apply in Form 6 like other general electors",
+          "keywords": [
+            "are",
+            "forms",
+            "the",
+            "what",
+            "in",
+            "application"
+          ],
+          "search_text": "what are the application forms in which various categories of service voters have to apply for enrollment as elector?"
+        },
+        {
+          "id": "RES_040",
+          "question": "What is the process of enrollment of any service personnel as a service voter?",
+          "answer": "Election Commission normallyorders revision/updation of rolls for service voters every year. The Commission sends a communication to Ministry of Defence, Ministry of Home Affairs and Ministry of External Affairs intimating them of the commencement of revision programme. As soon as the programme is announced, persons having service qualification can fill up the application in statutory Form 2 / 2A / 3, and handover to the officer in-charge of record office or the nodal authority in Ministry of External Affairs (in case of persons employed under Government of India on a post outside India). All the activities of summary revision including submission of Forms by eligible service personnel through their Record Officer/Commanding Officer are done online through service voters portal exclusively meant for service personnel. The person applying in Form 2 / 2A has also to submit a declaration to the effect that he did not get enrolled as general elector in any constituency which is the part of the Form itself. The officer in-charge, after verification of the Form forwards the same to the Electoral Registration Officer concerned to process the Form and to take necessary action for enrolment.",
+          "keywords": [
+            "enrollment",
+            "the",
+            "process",
+            "of",
+            "what",
+            "is"
+          ],
+          "search_text": "what is the process of enrollment of any service personnel as a service voter?"
+        },
+        {
+          "id": "RES_041",
+          "question": "Is spouse (wife or husband) or son/daughter of a service voter also enrolled as a service voter?",
+          "answer": "The spouse of a service voter shall, if he/she is ordinarily residing with his/her spouse, can also be registered as service voter in the constituency specified by that person. The service voter has to make a statement to the effect in the relevant Form 2/2A/3 that his/herwife/husband ordinarily resides with him/her. The wife/husband will be enrolled as a service voter on the basis of declaration made by her husband/his wife in the application form itself submitted by him/her and no separate declaration / application is required to be made by the wife/husband. A son/daughter/relative/servant etc. residing ordinarily with a service voter cannot be enrolled as service voter",
+          "keywords": [
+            "or",
+            "spouse",
+            "husband",
+            "is",
+            "wife"
+          ],
+          "search_text": "is spouse (wife or husband) or son/daughter of a service voter also enrolled as a service voter?"
+        },
+        {
+          "id": "RES_042",
+          "question": "Can one be enrolled simultaneously as a service voter at his native place as well as a general voter at the place of posting?",
+          "answer": "No. A person, at a particular time, cannot be enrolled as a voter at more than one place in view of the provisions contained under Sections 17 and 18 of Representation of People Act, 1950. Likewise, no person can be enrolled as an elector more than once in any electoral roll. As explained above, a service voter has option either to get himself registered as service voter at his native place or as general elector at the place of posting. When a person applies for registration as a service voter in Form 2 / 2A, he has to submit a declaration in a prescribed format to the effect that he did not get enrolled as ordinary general elector in any constituency.",
+          "keywords": [
+            "as",
+            "can",
+            "enrolled",
+            "one",
+            "simultaneously",
+            "be"
+          ],
+          "search_text": "can one be enrolled simultaneously as a service voter at his native place as well as a general voter at the place of posting?"
+        },
+        {
+          "id": "RES_043",
+          "question": "Who is a Classified Service Voter?",
+          "answer": "Service voter belonging to Armed Forces or forces to which provisions of Army Act, 1950 are applicable, has option of either voting through postal ballot or through a proxy voter duly appointed by him. A service voter who opts for voting through a proxy is called Classified Service Voter (CSV).",
+          "keywords": [
+            "service",
+            "voter",
+            "classified",
+            "is",
+            "who",
+            "a"
+          ],
+          "search_text": "who is a classified service voter?"
+        },
+        {
+          "id": "RES_044",
+          "question": "Who is a ‘proxy’? What is the procedure of appointment of a ‘proxy’?",
+          "answer": "A service voter may appoint (by applying to Returning Officer in Form 13 F of Conduct of Elections Rules, 1961 – Form available at the website of Election Commission) any person as his / her proxy to give vote on his / her behalf and in his / her name at the polling station. The proxy shall have to be ordinary resident of that constituency. He need not be a registered voter but he / she must not be disqualified to be registered as a voter.A ‘proxy’ can be appointed in the following two ways: -• If a service voter is at the place of his posting, he has to put his signature in Form 13F before the Commanding Officer of the Unit and then to send the Form to his proxy for affixing his / her signature before a Notary / First Class Magistrate. Thereafter, the proxy can submit the Form to the Returning Officer concerned.• If a service voter is at his native place, both he and his proxy can sign Form 13 F before a Notary / First Class Magistrate and then send to the Returning Officerconcerned.",
+          "keywords": [
+            "what",
+            "is",
+            "proxy",
+            "who",
+            "a"
+          ],
+          "search_text": "who is a ‘proxy’? what is the procedure of appointment of a ‘proxy’?"
+        },
+        {
+          "id": "RES_045",
+          "question": "Can a Classified Service Voter be issued postal ballots by the Returning Officer?",
+          "answer": "A Classified Service Voter cannot be issued postal ballots but the appointed proxy shall physically come and vote at the polling station which covers the classified voter’s home address.",
+          "keywords": [
+            "service",
+            "voter",
+            "classified",
+            "can",
+            "a",
+            "be"
+          ],
+          "search_text": "can a classified service voter be issued postal ballots by the returning officer?"
+        },
+        {
+          "id": "RES_046",
+          "question": "For what period a proxy remains valid?",
+          "answer": "The provision for voting through proxy is valid till the person making the appointment is a service voter. Once appointed, the proxy will continue until his appointment is revoked by the service voter. The facility of proxy voter can be revoked and the proxy can be changed at any time or for any number of times by the Classified Service Voter. Thus a Classified Service Voter can revoke and opt back for postal ballot route or even substitute the proxy by intimating the Returning Officer in Form 13 G of Conduct of Elections Rules, 1961 (Form available at the website of Election Commission). Revocation will become effective from the date it is received by the Returning Officer.",
+          "keywords": [
+            "remains",
+            "what",
+            "proxy",
+            "a",
+            "period",
+            "for"
+          ],
+          "search_text": "for what period a proxy remains valid?"
+        },
+        {
+          "id": "RES_047",
+          "question": "When should the application for appointment of a proxy be made?",
+          "answer": "Application for appointment of a proxy should be received by the Returning Officer before the last date of filing of nomination papers. An application for appointment of a proxy received after the last date of filing nomination papers cannot be considered for the election in progress, though it will be valid for subsequent elections unless revoked / changed",
+          "keywords": [
+            "should",
+            "the",
+            "when",
+            "appointment",
+            "application",
+            "for"
+          ],
+          "search_text": "when should the application for appointment of a proxy be made?"
+        },
+        {
+          "id": "RES_048",
+          "question": "In which language the last part of rolls is prepared for service voters?",
+          "answer": "The last part containing the list of service voter is prepared in English only",
+          "keywords": [
+            "which",
+            "the",
+            "language",
+            "in",
+            "part",
+            "last"
+          ],
+          "search_text": "in which language the last part of rolls is prepared for service voters?"
+        },
+        {
+          "id": "RES_049",
+          "question": "Is a service voter issued Elector Photo Identity Card (EPIC) like ordinary electors?",
+          "answer": "A service voter is not issued Elector Photo Identity Card (EPIC). Elector Photo Identity Card (EPIC) is a document of identity which an elector has to show at the polling station at the time of casting his vote. As service voters are issued postal ballots or votes through his ‘proxy’, they are not required to visit the polling stations personally and therefore Elector Photo Identity Cards (EPICs) is not issued to them.",
+          "keywords": [
+            "service",
+            "voter",
+            "elector",
+            "issued",
+            "is",
+            "a"
+          ],
+          "search_text": "is a service voter issued elector photo identity card (epic) like ordinary electors?"
+        },
+        {
+          "id": "RES_050",
+          "question": "Is a service voter required to apply for issue of a postal ballot paper?",
+          "answer": "No; the Returning Officer will himself send a postal ballot paper to him through his record office (or direct or through the Ministry of External Affairs in the case of a service voter serving outside India).",
+          "keywords": [
+            "service",
+            "voter",
+            "to",
+            "required",
+            "is",
+            "a"
+          ],
+          "search_text": "is a service voter required to apply for issue of a postal ballot paper?"
+        },
+        {
+          "id": "RES_051",
+          "question": "What is the relevant date for revision of electoral rolls for Legislative Council Constituencies?",
+          "answer": "In the case of Local Authorities Constituencies there is no qualifying date, however the qualifying date for being enrolled in Graduates and Teachers Constituencies 1st day of November of the year in which the preparation or revision of the electoral rolls is commenced.",
+          "keywords": [
+            "date",
+            "relevant",
+            "the",
+            "what",
+            "is",
+            "for"
+          ],
+          "search_text": "what is the relevant date for revision of electoral rolls for legislative council constituencies?"
+        },
+        {
+          "id": "RES_052",
+          "question": "How can one get registered/enrolled in the electoral rolls for Legislative Constituencies?",
+          "answer": "For enrolment in electoral roll for Local Authorities Constituencies only ex-officio and nominated members of the Local Authorities in the concerned State are eligible. The application for inclusion can be made in Form 17 to the Electoral Registration Officer. For registration in Graduates and Teachers Constituencies, one has to file the application for the purpose, in prescribed Form 18 or 19 as the case may be, before the ERO/AERO of the constituency within which the place of ordinary residence of the applicant falls. The application accompanied by copies of the relevant documents can be filed in person before the concerned ERO/AERO or sent by post addressed to him.",
+          "keywords": [
+            "can",
+            "registered",
+            "how",
+            "enrolled",
+            "one",
+            "get"
+          ],
+          "search_text": "how can one get registered/enrolled in the electoral rolls for legislative constituencies?"
+        },
+        {
+          "id": "RES_053",
+          "question": "From where Form 17/18/19 can be obtained?",
+          "answer": "It can be downloaded from the website of Election Commission of India. Forms are also available free of cost in offices of Electoral Registration Officers / Assistant Electoral Registration Officers.",
+          "keywords": [
+            "from",
+            "form",
+            "18",
+            "19",
+            "where",
+            "17"
+          ],
+          "search_text": "from where form 17/18/19 can be obtained?"
+        },
+        {
+          "id": "RES_054",
+          "question": "What are the conditions for enrolment in Graduates and Teachers Constituencies?",
+          "answer": "For enrolment in a Graduates’ Constituency one should be an ordinarily resident in that Constituency, and should have, for at least three years before the qualifying date (1st November of the year), been either a Graduate of a university in India or in possession of any of the qualification deemed to be equivalent to that of a Graduate of a university in India. For registration in electoral roll for a Teachers’Constituency, one should be ordinarily resident in that Constituency and within the six years immediately before the qualifying date (1st November of the year), for a total period of at least three years, should have been engaged in teaching in any of the educational institutions notified by the State Government within the State, not lower than in standard than that of a secondary school",
+          "keywords": [
+            "are",
+            "the",
+            "enrolment",
+            "what",
+            "conditions",
+            "for"
+          ],
+          "search_text": "what are the conditions for enrolment in graduates and teachers constituencies?"
+        },
+        {
+          "id": "RES_055",
+          "question": "What documents are required to be enclosed with Form 18?",
+          "answer": "The eligible person should apply for enrolment of their names in the prescribed Form 18 along with any of the documents listed below-(i) The degree/diploma certificate, in original, issued by the University or Institution concerned or a copy thereof, duly authenticated by the Designated Officer/Additional Designated Officer/Gazetted Officer of the District concerned. (ii) A copy of an entry in the Government record or a certificate issued to a Graduate employee by the Gazetted Head of Offices/Institutes on the basis of entries in Government records in his custody or a copy of an entry in the record of Statutory Bodies, Corporations or Public undertakings specifying the degree, diploma or certificate possessed by the claimant, duly at tested by the Head of the office concerned; or (iii) An attested copy of the card of registration as Registered Graduate issued by the University, a certified copy of the relevant entry in the list of Registered Graduates’, the Roll of Advocates, the Register of Medical Practitioners, the Register of Chartered Accountants, the Register of Engineers maintained by Institute of Engineers, etc.;or(iv) An Affidavit by the claimant, supported by certificate from the Registrar of a University, or the Principal of a College affiliated to university or from the Head of the Department of such College under whom he had studied; or(v) The mark sheet, in original, issued by the University or Institution concerned or a copy there of, duly authenticated by the Additional Designated Officer/Gazetted Officer of the District concerned/Notary Public",
+          "keywords": [
+            "to",
+            "documents",
+            "are",
+            "required",
+            "what",
+            "be"
+          ],
+          "search_text": "what documents are required to be enclosed with form 18?"
+        },
+        {
+          "id": "RES_056",
+          "question": "What documents are required to be enclosed with Form 19?",
+          "answer": "Every person applying for enrolment (in Form-19) in Teachers’ constituency must submitdocumentary proof of having been engaged in teaching in anyof the specified educational institutions for a total period of at least three years within six years immediately before the qualifying date. Electoral Registration Officer / Assistant Electoral Registration Officer concerned should make such verification of the documentary proof as he considers necessary. A certificate by the Head of the teaching institution should normally be considered adequate documentary proof of possessing that teaching qualification. If any person, who has applied for inclusion of his name in a teachers’ constituency, has been engaged in teaching in more than on specified educational institutions in the last six years, the certificate from the Head of institution of each of such educational institution will be required for the period for which he was engaged in teaching in that educational institution.",
+          "keywords": [
+            "to",
+            "documents",
+            "are",
+            "required",
+            "what",
+            "be"
+          ],
+          "search_text": "what documents are required to be enclosed with form 19?"
+        }
+      ]
+    },
+    {
+      "title": "Electronic Voting Machine",
+      "faqs": [
+        {
+          "id": "ELE_001",
+          "question": "What is an Electronic Voting machine? In what way its functioning is different from the conventional system of voting?",
+          "answer": "Electronic Voting Machine (EVM) is an electronic device for recording votes. An Electronic Voting Machine consists of two Units – a Control Unit and a Balloting Unit – joined by a five-meter cable. The Control Unit is placed with the Presiding Officer or a Polling Officer and the Balloting Unit is placed inside the voting compartment. Instead of issuing a ballot paper, the Polling Officer in-charge of the Control Unit will release a ballot by pressing the Ballot Button on the Control Unit. This will enable the voter to cast his vote by pressing the blue button on the Balloting Unit against the candidate and symbol of his choice.",
+          "keywords": [
+            "machine",
+            "electronic",
+            "an",
+            "what",
+            "is",
+            "voting"
+          ],
+          "search_text": "what is an electronic voting machine? in what way its functioning is different from the conventional system of voting?"
+        },
+        {
+          "id": "ELE_002",
+          "question": "When was the EVM first introduced in elections?",
+          "answer": "EVMs were first used in 70-Parur Assembly Constituency of Kerala in the year 1982.",
+          "keywords": [
+            "was",
+            "evm",
+            "the",
+            "introduced",
+            "when",
+            "first"
+          ],
+          "search_text": "when was the evm first introduced in elections?"
+        },
+        {
+          "id": "ELE_003",
+          "question": "How can EVMs be used in areas where there is no electricity?",
+          "answer": "EVMs do not require electricity. EVMs run on an ordinary battery assembled by Bharat Electronics Limited/Electronics Corporation of India Limited.",
+          "keywords": [
+            "evms",
+            "can",
+            "how",
+            "used",
+            "in",
+            "be"
+          ],
+          "search_text": "how can evms be used in areas where there is no electricity?"
+        },
+        {
+          "id": "ELE_004",
+          "question": "What is the maximum number of votes which can be cast in EVMs?",
+          "answer": "An EVM being used by ECI can record a maximum of 2,000 votes.",
+          "keywords": [
+            "the",
+            "maximum",
+            "of",
+            "number",
+            "what",
+            "is"
+          ],
+          "search_text": "what is the maximum number of votes which can be cast in evms?"
+        },
+        {
+          "id": "ELE_005",
+          "question": "What is the maximum number of candidates which EVMs can cater to?",
+          "answer": "In case of M2 EVMs (2006-10), EVMs can cater to a maximum of 64 candidates including NOTA. There is provision for 16 candidates in a Balloting Unit. If the total number of candidates exceeds 16, more balloting units can be attached (one per 16 candidates) up to a maximum of 64 candidates by connecting 4 Balloting Units. However, in case of M3 EVMs (Post 2013), EVMs can cater to a maximum of 384 candidates including NOTA by connecting 24 Balloting Units.",
+          "keywords": [
+            "the",
+            "maximum",
+            "of",
+            "number",
+            "what",
+            "is"
+          ],
+          "search_text": "what is the maximum number of candidates which evms can cater to?"
+        },
+        {
+          "id": "ELE_006",
+          "question": "What will happen if the EVM in a particular polling station goes out of order?",
+          "answer": "If an EVM of a particular polling station goes out of order, the same is replaced with a new one. The votes recorded until the stage when the EVM went out of order remains safe in the memory of the Control Unit and it is perfectly fine to proceed with the polling after replacing the EVM with new EVM and there is no need to start the poll from the beginning. On counting day, votes recorded in both Control Units are counted to give the aggregate result of that polling station.",
+          "keywords": [
+            "evm",
+            "the",
+            "will",
+            "what",
+            "if",
+            "happen"
+          ],
+          "search_text": "what will happen if the evm in a particular polling station goes out of order?"
+        },
+        {
+          "id": "ELE_007",
+          "question": "Who has designed the EVMs?",
+          "answer": "The EVMs have been devised and designed by the Technical Experts Committee (TEC) of the Election Commission in collaboration with two Public Sector undertakings viz., Bharat Electronics Ltd., Bangalore and Electronic Corporation of India Ltd., Hyderabad. The EVMs are manufactured by the above two undertakings.",
+          "keywords": [
+            "has",
+            "evms",
+            "the",
+            "designed",
+            "who"
+          ],
+          "search_text": "who has designed the evms?"
+        },
+        {
+          "id": "ELE_008",
+          "question": "What is Voter Verifiable Paper Audit Trail (VVPAT)?",
+          "answer": "Voter Verifiable Paper Audit Trail (VVPAT) is an independent system attached with the Electronic Voting Machines that allows the voters to verify that their votes are cast as intended. When a vote is cast, a slip is printed containing the serial number, name and symbol of the candidate and remains exposed through a transparent window for 7 seconds. Thereafter, this printed slip automatically gets cut and falls in the sealed drop box of the VVPAT.",
+          "keywords": [
+            "voter",
+            "verifiable",
+            "audit",
+            "what",
+            "is",
+            "paper"
+          ],
+          "search_text": "what is voter verifiable paper audit trail (vvpat)?"
+        },
+        {
+          "id": "ELE_009",
+          "question": "Whether VVPAT runs on electricity?",
+          "answer": "No. VVPAT runs on a power pack Battery.",
+          "keywords": [
+            "on",
+            "whether",
+            "vvpat",
+            "runs",
+            "electricity"
+          ],
+          "search_text": "whether vvpat runs on electricity?"
+        },
+        {
+          "id": "ELE_010",
+          "question": "Where were VVPATs used for first time in India?",
+          "answer": "VVPATs with EVMs were used for first time in a bye-election from 51-Noksen (ST) Assembly Constituency of Nagaland.",
+          "keywords": [
+            "vvpats",
+            "were",
+            "used",
+            "where",
+            "first",
+            "for"
+          ],
+          "search_text": "where were vvpats used for first time in india?"
+        },
+        {
+          "id": "ELE_011",
+          "question": "Who conducts the First Level Checking of EVMs & VVPATs?",
+          "answer": "Only authorized engineers of the manufacturers, namely Bharat Electronics Limited (BEL) and Electronics Corporation of India Limited (ECIL), conduct the First Level Checking (FLC) of EVMs and VVPATs under control of District Election Officer and direct supervision of Dy. DEO in the presence of representative of Political Parties under videography.",
+          "keywords": [
+            "conducts",
+            "level",
+            "the",
+            "checking",
+            "who",
+            "first"
+          ],
+          "search_text": "who conducts the first level checking of evms & vvpats?"
+        },
+        {
+          "id": "ELE_012",
+          "question": "What is the cost of the machines? Is it not too expensive to use EVMs?",
+          "answer": "The Cost of M2 EVMs (manufactured between 2006-10) was Rs.8670/- per EVM (Balloting Unit and Control Unit). The cost of M3 EVMs has been tentatively fixed at about Rs. 17,000 per unit. Even though the initial investment seems somewhat heavy, this is more than set off by the savings in the matter of printing of ballot papers in lakhs for every election, their transportation, storage etc., and the substantial reduction in the counting staff and the remuneration paid to them.",
+          "keywords": [
+            "cost",
+            "the",
+            "of",
+            "what",
+            "is"
+          ],
+          "search_text": "what is the cost of the machines? is it not too expensive to use evms?"
+        },
+        {
+          "id": "ELE_013",
+          "question": "In our country a sizeable section of the population is illiterate. Will it not cause problems for the illiterate voters?",
+          "answer": "Voting by EVMs is much simpler compared to the conventional system, where one has to put the voting mark on or near the symbol of the candidate of his choice on the Ballot Paper, fold it first vertically and then horizontally and thereafter put it into the ballot box. In EVMs, the voter has to simply press the blue button on Ballot Unit against the candidate and symbol of his choice and the vote is recorded.",
+          "keywords": [
+            "country",
+            "sizeable",
+            "section",
+            "in",
+            "a",
+            "our"
+          ],
+          "search_text": "in our country a sizeable section of the population is illiterate. will it not cause problems for the illiterate voters?"
+        },
+        {
+          "id": "ELE_014",
+          "question": "Is it possible to use EVMs for simultaneous elections for Parliament and State Legislative Assembly?",
+          "answer": "Yes. However, during simultaneous elections 2 separate sets of EVMs are required, one for the Parliamentary Constituency and the other for the Legislative Assembly Constituency.",
+          "keywords": [
+            "to",
+            "possible",
+            "it",
+            "evms",
+            "use",
+            "is"
+          ],
+          "search_text": "is it possible to use evms for simultaneous elections for parliament and state legislative assembly?"
+        },
+        {
+          "id": "ELE_015",
+          "question": "What are the advantages in using EVMs?",
+          "answer": "Advantage of using EVMs:It completely eliminates the possibility of casting 'Invalid Votes', which during the paper ballot regime was noticed in large numbers during each election. In fact, in many cases, the number of 'Invalid Votes' exceeded the winning margin, leading to numerous complaints and litigations. Thus EVMs have enabled a more authentic and accurate reflection of the choice of the electorate.With the use of EVMs, printing of millions of ballot papers for every election can be dispensed with, as only one ballot paper is required for fixing on the Balloting Unit at each polling station instead of one ballot paper for each individual elector. This results in huge savings by way of cost of paper, printing, transportation, storage and distribution.The counting process is very quick and the result can be declared within 3 to 5 hours as compared to 30-40 hours, on an average, under the conventional Ballot paper system.",
+          "keywords": [
+            "using",
+            "advantages",
+            "are",
+            "the",
+            "what",
+            "in"
+          ],
+          "search_text": "what are the advantages in using evms?"
+        },
+        {
+          "id": "ELE_016",
+          "question": "With ballot boxes counting is done after mixing the ballot papers. Is it possible to adopt this system when EVMs are used?",
+          "answer": "Yes, through the use of a device called 'Totalizer' which can accommodate upto 14 Control Units at a time to aggregate votes without revealing the candidate-wise count of individual EVM used at a particular polling station. However, totalizers are not in use at present as its technical aspects and other related issues are under examination and it is also the subject of a court case.",
+          "keywords": [
+            "counting",
+            "is",
+            "ballot",
+            "boxes",
+            "done",
+            "with"
+          ],
+          "search_text": "with ballot boxes counting is done after mixing the ballot papers. is it possible to adopt this system when evms are used?"
+        },
+        {
+          "id": "ELE_017",
+          "question": "How long does the Control Unit store the result in its memory?",
+          "answer": "The Control Unit can store the result in its memory until the data is deleted or cleared.",
+          "keywords": [
+            "the",
+            "how",
+            "does",
+            "control",
+            "long",
+            "unit"
+          ],
+          "search_text": "how long does the control unit store the result in its memory?"
+        },
+        {
+          "id": "ELE_018",
+          "question": "Wherever an election petition is filed, the result of the election is subject to the final outcome. The courts, in appropriate cases, may order a recount of votes. Whether EVMs can be stored for such a long time and whether the result can be taken in the presence of the officers authorised by Courts?",
+          "answer": "The lifespan of an EVM is 15 years & even more and votes recorded in the Control Unit can be stored upto its lifetime until it is cleared. If the Court orders a recount, the Control Unit can be reactivated by fixing the battery and it will display the result stored in its memory.",
+          "keywords": [
+            "wherever",
+            "an",
+            "is",
+            "petition",
+            "election",
+            "filed"
+          ],
+          "search_text": "wherever an election petition is filed, the result of the election is subject to the final outcome. the courts, in appropriate cases, may order a recount of votes. whether evms can be stored for such a long time and whether the result can be taken in the presence of the officers authorised by courts?"
+        },
+        {
+          "id": "ELE_019",
+          "question": "Is it possible to vote more than once by pressing the button again and again?",
+          "answer": "No. As soon as a particular button on the Balloting Unit is pressed, the vote is recorded for that particular candidate and the machine gets locked. Even if one presses that button further or any other button, no further vote will be recorded. This way the EVMs ensure the principle of 'one man, one vote'. The next vote is enabled only when the Presiding Officer/Polling Officer in-charge of the Control Unit releases the Ballot by pressing the Ballot Button. This is a distinct advantage over the ballot paper system.",
+          "keywords": [
+            "to",
+            "vote",
+            "possible",
+            "it",
+            "is",
+            "more"
+          ],
+          "search_text": "is it possible to vote more than once by pressing the button again and again?"
+        },
+        {
+          "id": "ELE_020",
+          "question": "How can a voter be sure that the EVM is working and his vote has been recorded?",
+          "answer": "As soon as the voter presses the `blue button' against the candidate and symbol of his choice, the lamp against symbol of that particular candidate glows red and a long beep sound is heard. Thus, there is both audio and visual indications for the voter to be assured that his vote has been recorded correctly. In addition, VVPAT provides an additional visual verification in the form of paper slip to the voter so he can ensure that his vote has been correctly recorded for the candidate of his choice.",
+          "keywords": [
+            "sure",
+            "voter",
+            "can",
+            "how",
+            "a",
+            "be"
+          ],
+          "search_text": "how can a voter be sure that the evm is working and his vote has been recorded?"
+        },
+        {
+          "id": "ELE_021",
+          "question": "Is it true that sometimes because of short-circuitry or other reason, a voter is likely to get an electric shock while pressing the `blue button?",
+          "answer": "No. EVMs work on a battery and there is absolutely no chance of any voter getting an electric shock at the time of pressing the `blue button' or at any time of handling the EVM.",
+          "keywords": [
+            "sometimes",
+            "true",
+            "it",
+            "is",
+            "that",
+            "because"
+          ],
+          "search_text": "is it true that sometimes because of short-circuitry or other reason, a voter is likely to get an electric shock while pressing the `blue button?"
+        },
+        {
+          "id": "ELE_022",
+          "question": "Is it possible to program the EVMs in such a way that initially, say upto 100 votes, votes will be recorded exactly in the same way as the `blue buttons' are pressed, but thereafter, votes will be recorded only in favor of one particular candidate irrespective of whether the `blue button' against that candidate or any other candidate is pressed?",
+          "answer": "The microchip used in EVMs is a one-time programmable/ masked chip, which can neither be read nor overwritten. Hence, the program used in the EVMs cannot be reprogrammed in a particular manner. Furthermore, the EVMs are stand-alone machines which are not accessible remotely from any network are connected with any external devices and there is no operating system used in these machines. There is, therefore, absolutely no chance of programming the EVMs in a particular way to select any particular candidate or political party.",
+          "keywords": [
+            "to",
+            "possible",
+            "it",
+            "program",
+            "the",
+            "is"
+          ],
+          "search_text": "is it possible to program the evms in such a way that initially, say upto 100 votes, votes will be recorded exactly in the same way as the `blue buttons' are pressed, but thereafter, votes will be recorded only in favor of one particular candidate irrespective of whether the `blue button' against that candidate or any other candidate is pressed?"
+        },
+        {
+          "id": "ELE_023",
+          "question": "Will it not be difficult to transport the EVMs to the polling stations?",
+          "answer": "No. On the contrary, it is easier to transport the EVMs, as compared to ballot boxes as EVMs are lighter, portable and come with custom-made polypropylene carrying cases for ease of portage/transport.",
+          "keywords": [
+            "to",
+            "it",
+            "will",
+            "not",
+            "difficult",
+            "be"
+          ],
+          "search_text": "will it not be difficult to transport the evms to the polling stations?"
+        },
+        {
+          "id": "ELE_024",
+          "question": "In many areas of the country, there is no electricity connection and even in those places where there is electricity connection, power supply is erratic. In this scenario will it not create problem in storing the machines without air conditioning?",
+          "answer": "There is no need to air condition the room/hall where EVMs are stored. What is required is only to keep the room/hall free from dust dampness and rodents as in the case of ballot boxes.",
+          "keywords": [
+            "areas",
+            "the",
+            "country",
+            "of",
+            "many",
+            "in"
+          ],
+          "search_text": "in many areas of the country, there is no electricity connection and even in those places where there is electricity connection, power supply is erratic. in this scenario will it not create problem in storing the machines without air conditioning?"
+        },
+        {
+          "id": "ELE_025",
+          "question": "In the conventional system, it will be possible to know the total number of votes polled at any particular point of time. In EVMs 'Result' portion is sealed and will be opened only at the time of counting. How can the total number of votes polled be known on the date of poll?",
+          "answer": "In addition to the 'Result' button, there is a 'Total' button on Control Unit of EVMs. By pressing this button the total number of votes polled upto the time of pressing the button will be displayed without indicating the candidate-wise result.",
+          "keywords": [
+            "system",
+            "conventional",
+            "the",
+            "it",
+            "will",
+            "in"
+          ],
+          "search_text": "in the conventional system, it will be possible to know the total number of votes polled at any particular point of time. in evms 'result' portion is sealed and will be opened only at the time of counting. how can the total number of votes polled be known on the date of poll?"
+        },
+        {
+          "id": "ELE_026",
+          "question": "The Balloting Unit has provision for 16 candidates. In a constituency, there are only 10 candidates. The voter may press any of the buttons from 11 to 16. Will these votes not be wasted?",
+          "answer": "No. If there are only 10 candidates including NOTA in a constituency, the ‘Candidate’ buttons provided at Sl. No. 11 to 16 will be masked at the time of preparation of EVM by Returning Officer. Therefore, there is no question of any voter pressing any of the buttons for candidates 11 to 16.",
+          "keywords": [
+            "has",
+            "provision",
+            "the",
+            "balloting",
+            "unit",
+            "for"
+          ],
+          "search_text": "the balloting unit has provision for 16 candidates. in a constituency, there are only 10 candidates. the voter may press any of the buttons from 11 to 16. will these votes not be wasted?"
+        },
+        {
+          "id": "ELE_027",
+          "question": "Ballot boxes are engraved so as to avoid any scope for complaint of replacement of these boxes. Is there any system of numbering EVMs?",
+          "answer": "Yes. Each Balloting Unit and Control Unit has a unique ID Number, which is engraved on each unit. The list containing ID number of EVM (Balloting Unit & Control Unit) to be used in a particular polling station is prepared and provided to the contesting candidates/their agents.",
+          "keywords": [
+            "as",
+            "are",
+            "engraved",
+            "so",
+            "ballot",
+            "boxes"
+          ],
+          "search_text": "ballot boxes are engraved so as to avoid any scope for complaint of replacement of these boxes. is there any system of numbering evms?"
+        },
+        {
+          "id": "ELE_028",
+          "question": "In the conventional system, before the commencement of poll, the Presiding Officer shows to the polling agents present that the ballot box to be used in the polling station is empty. Is there any such provision to satisfy the polling agents that there are no hidden votes already recorded in the EVMs?",
+          "answer": "Yes. Before the commencement of poll, the Presiding Officer demonstrates to the polling agents present that there are no hidden votes already recorded in the machine by pressing the result button. Thereafter, he conducts a Mock poll with atleast 50 votes in the presence of the polling agents and tallied with the electronic result stored in the CU to fully satisfy the polling agents to satisfy them that the result shown is strictly according to the choice recorded by them. Thereafter, the Presiding Officer will press the clear button to clear the result of the mock poll before commencing the actual poll. He then again shows to polling agents, by pressing 'Total' button that it shows '0'. Then he seals the Control Unit before starting actual poll in the presence of polling agents. Now, with 100% VVPAT use at every polling booth, after the Mock Poll, the VVPAT paper slips are also counted.",
+          "keywords": [
+            "before",
+            "system",
+            "conventional",
+            "the",
+            "in"
+          ],
+          "search_text": "in the conventional system, before the commencement of poll, the presiding officer shows to the polling agents present that the ballot box to be used in the polling station is empty. is there any such provision to satisfy the polling agents that there are no hidden votes already recorded in the evms?"
+        },
+        {
+          "id": "ELE_029",
+          "question": "How can one rule out the possibility of recording further votes at any time after close of the poll and before the commencement of counting by interested parties?",
+          "answer": "After completion of poll i.e. when the last voter has voted, the Officer in-charge of the Control Unit/Presiding Officer presses the 'Close' Button. Thereafter, the EVM does not accept any vote. After the close of poll, the Control Unit is switched off and thereafter the Balloting Unit is disconnected from the Control Unit and kept separately in the respective carrying cases and sealed. Further, the Presiding officer has to hand over to each polling agent a copy of the account of votes recorded. At the time of counting of votes, the total votes recorded in a particular control unit is tallied with this account and if there is any discrepancy, this can be pointed out by the Counting Agents.",
+          "keywords": [
+            "rule",
+            "can",
+            "out",
+            "how",
+            "the",
+            "one"
+          ],
+          "search_text": "how can one rule out the possibility of recording further votes at any time after close of the poll and before the commencement of counting by interested parties?"
+        },
+        {
+          "id": "ELE_030",
+          "question": "Whether there is any provision to complaint if the paper slip generated by the printer has shown the name or symbol of a candidate other than the one he voted for?",
+          "answer": "Yes, if an elector after having recorded his vote alleges that the paper slip generated by the printer has shown the name or symbol of a candidate other than the one he voted for, as per the provisions of Rule 49MA of Conduct of Elections Rules, 1961, the presiding officer shall obtain a written declaration from the elector as to the allegation, after warning the elector about the consequence of making a false declaration.If the elector gives the written declaration referred to in sub-rule (1) of Rule 49MA, the presiding officer shall permit the elector to record a test vote in the voting machine in his presence and in the presence of the candidates or polling agents who may be present in the polling station, and observe the paper slip generated by the printer.If the allegation is found true, the presiding officer shall report the facts immediately to the returning officer, stop further recording of votes in that voting machine and act as per the direction that may be given by the Returning Officer.If, however, the allegation is found to be false and the paper slip so generated under sub-rule (1) matches with the test vote recorded by the elector under sub-rule (2), then, the presiding officer shall-make a remark to that effect against the second entry relating to that elector in Form 17A mentioning the serial number and name of the candidate for whom such test vote has been recorded;obtain the signature or thumb impression of that elector against such remarks; and make necessary entries regarding such test vote in item 5 in Part I of Form 17C.'.'",
+          "keywords": [
+            "there",
+            "provision",
+            "to",
+            "whether",
+            "is",
+            "any"
+          ],
+          "search_text": "whether there is any provision to complaint if the paper slip generated by the printer has shown the name or symbol of a candidate other than the one he voted for?"
+        },
+        {
+          "id": "ELE_031",
+          "question": "Who loads the Serial numbers, names of candidates and symbols allotted to contesting candidates in VVPAT unit?",
+          "answer": "Serial numbers, names of candidates and symbols allotted to them are loaded in VVPAT unit with the help of engineers of the manufacturer i.e. ECIL/BEL",
+          "keywords": [
+            "serial",
+            "the",
+            "loads",
+            "who",
+            "names",
+            "numbers"
+          ],
+          "search_text": "who loads the serial numbers, names of candidates and symbols allotted to contesting candidates in vvpat unit?"
+        },
+        {
+          "id": "ELE_032",
+          "question": "Whether test printout of the Serial numbers, names of candidates and symbols loaded in VVPAT is required?",
+          "answer": "Yes. A test printout of the Serial numbers, names of candidates and symbols loaded in VVPAT is required to check with the ballot paper placed on Ballot Unit. Thereafter, one vote to each candidate will be given to check that the VVPAT is printing the paper slips correctly in respect of all the candidates.",
+          "keywords": [
+            "serial",
+            "the",
+            "of",
+            "whether",
+            "test",
+            "printout"
+          ],
+          "search_text": "whether test printout of the serial numbers, names of candidates and symbols loaded in vvpat is required?"
+        },
+        {
+          "id": "ELE_033",
+          "question": "Whether additional Polling Official is required in each polling station to handle the VVPAT unit?",
+          "answer": "Yes. Additional polling official is required in each polling station where M2 VVPATs are deployed with the EVMs. The duty of this polling official will be to watch the VVPAT Status Display Unit (VSDU), kept on the presiding officer's table, continuously during the entire poll process.However, in case of M3 VVPAT no additional polling official is required to handle the VVPAT.",
+          "keywords": [
+            "additional",
+            "whether",
+            "required",
+            "is",
+            "polling",
+            "official"
+          ],
+          "search_text": "whether additional polling official is required in each polling station to handle the vvpat unit?"
+        },
+        {
+          "id": "ELE_034",
+          "question": "Whether changing of paper roll is allowed at polling stations?",
+          "answer": "Changing of paper roll is strictly prohibited at polling stations.",
+          "keywords": [
+            "of",
+            "whether",
+            "changing",
+            "is",
+            "paper",
+            "roll"
+          ],
+          "search_text": "whether changing of paper roll is allowed at polling stations?"
+        },
+        {
+          "id": "ELE_035",
+          "question": "Whether counting of printing paper slips of VVPAT is compulsory on the counting day?",
+          "answer": "Counting of printed paper slips of VVPAT is done only in the following cases: Mandatory verification of printed VVPAT paper slips of 01 randomly selected polling station of (a) Assembly Constituency in case of election to State Legislative Assembly and (b) each Assembly Segment in case of election to the House of the People.In case of no display of result from the Control Unit, the printed paper slips of the respective VVPAT is counted.If any candidate, or in his absence, his election agent or any of his counting agents make a written request to count the printed paper slips of the VVPAT in respect of any polling station or polling stations under Rule 56 D of the Conduct of Elections Rules 1961, the Returning Officer taking into consideration various factors decides and issue written orders, whether to count or not to count the printed paper slips of the VVPAT of that particular polling station(s).",
+          "keywords": [
+            "of",
+            "whether",
+            "counting",
+            "printing",
+            "paper",
+            "slips"
+          ],
+          "search_text": "whether counting of printing paper slips of vvpat is compulsory on the counting day?"
+        },
+        {
+          "id": "ELE_036",
+          "question": "After announcement of the result, whether the printed paper slips of VVPAT (counted or not), the printed paper slips are required to be taken out of the drop box of the VVPAT Printer unit?",
+          "answer": "No. The VVPATs are stored along with the EVMs in a secure strong room till the completion of the Election Petition period.",
+          "keywords": [
+            "announcement",
+            "the",
+            "result",
+            "of",
+            "whether",
+            "after"
+          ],
+          "search_text": "after announcement of the result, whether the printed paper slips of vvpat (counted or not), the printed paper slips are required to be taken out of the drop box of the vvpat printer unit?"
+        },
+        {
+          "id": "ELE_037",
+          "question": "Where can I read further about EVMs and VVPATs?",
+          "answer": "For further reading you may refer to:Manual of EVMs available at https://eci.gov.in/files/file/9230-manual-on-electronic-voting-machine-and-vvpat/ Status paper on EVM available at https://eci.gov.in/files/file/8756-status-paper-on-evm-edition-3/",
+          "keywords": [
+            "further",
+            "can",
+            "read",
+            "i",
+            "about",
+            "where"
+          ],
+          "search_text": "where can i read further about evms and vvpats?"
+        },
+        {
+          "id": "ELE_038",
+          "question": "Whether it is possible to know beforehand about the deployment of EVMs in a particular polling station?",
+          "answer": "No, it must be noted here that the arrangement of names of candidates in the ballot paper, and hence the Ballot Unit, is in alphabetical order, first for the National & State Recognised Political Parties, followed by other State Registered Parties, and then by Independents. Thus, the sequence in which the candidates appear on the Ballot Unit is contingent on the names of the candidates and their party affiliation and cannot be ascertained beforehand.EVMs are allocated to polling station by two stages of randomization process through EVM Tracking Software developed by the Commission. After first level checking of EVMs, first randomization of EVMs is done at the District Election Officer level to allocate them Assembly Constituency-wise in the presence of the representative of political parties. Thereafter, before commissioning of EVMs, second randomisation of EVMs is done at the Returning Officer level to allocate them Polling Station-wise in the presence of candidates/their agents.",
+          "keywords": [
+            "to",
+            "possible",
+            "it",
+            "whether",
+            "know",
+            "is"
+          ],
+          "search_text": "whether it is possible to know beforehand about the deployment of evms in a particular polling station?"
+        },
+        {
+          "id": "ELE_039",
+          "question": "Is it true that many petition have been filed against EVMs in courts? What is the outcome?",
+          "answer": "Yes.Since 2001, the issue of possible tampering of EVM has been raised before various High Courts. Some of these are mentioned below: Madras High Court-2001 Kerala High Court-2002 Delhi High Court-2004 Karnataka High Court- 2004 Bombay High Court (Nagpur Bench)-2004 Uttarakhand High Court - 2017 Supreme Court of India - 2017 After detailed analysis of the various aspects of the technological security and administrative safeguards around the use of EVMs, the credibility, reliability and robustness of the EVMs has been validated by the various High Courts in all the cases. In some of these cases, the Hon'ble Supreme Court has also dismissed appeals filed by some petitioners against High Court orders, which were in favour of the EVMs. For details, refer Status paper on EVM available at https://eci.gov.in/files/file/8756-status-paper-on-evm-edition-3/",
+          "keywords": [
+            "true",
+            "it",
+            "many",
+            "is",
+            "petition",
+            "that"
+          ],
+          "search_text": "is it true that many petition have been filed against evms in courts? what is the outcome?"
+        }
+      ]
+    },
+    {
+      "title": "Model Code of Conduct",
+      "faqs": [
+        {
+          "id": "MOD_001",
+          "question": "What is the Model Code of Conduct?",
+          "answer": "The Model Code of Conduct for guidance of political parties and candidates is a set of norms which has been evolved with the consensus of political parties who have consented to abide by the principles embodied in the said code and also binds them to respect and observe it in its letter and spirit.",
+          "keywords": [
+            "code",
+            "model",
+            "the",
+            "of",
+            "what",
+            "is"
+          ],
+          "search_text": "what is the model code of conduct?"
+        },
+        {
+          "id": "MOD_002",
+          "question": "What is the role of Election Commission in the matter?",
+          "answer": "The Election Commission ensures its observance by political party(ies) in power, including ruling parties at the Centre and in the States and contesting candidates in the discharge of its constitutional duties for conducting the free, fair and peaceful elections to the Parliament and the State Legislatures under Article 324 of the Constitution of India. It is also ensured that official machinery for the electoral purposes is not misused. Further, it is also ensured that electoral offences, malpractices and corrupt practices such as impersonation, bribing and inducement of voters, threat and intimidation to the voters are prevented by all means. In case of violation, appropriate measures are taken.",
+          "keywords": [
+            "the",
+            "of",
+            "role",
+            "what",
+            "is",
+            "election"
+          ],
+          "search_text": "what is the role of election commission in the matter?"
+        },
+        {
+          "id": "MOD_003",
+          "question": "From which date the Model Code of Conduct is enforced and operational upto which date?",
+          "answer": "The Model Code of Conduct is enforced from the date of announcement of election schedule by the Election Commission and is operational till the process of elections are completed.",
+          "keywords": [
+            "date",
+            "which",
+            "code",
+            "model",
+            "the",
+            "from"
+          ],
+          "search_text": "from which date the model code of conduct is enforced and operational upto which date?"
+        },
+        {
+          "id": "MOD_004",
+          "question": "What is applicability of code during general elections and bye-elections?",
+          "answer": "During general elections to House of People (Lok Sabha), the code is applicable throughout the country. During general elections to the Legislative Assembly (Vidhan Sabha), the code is applicable in the entire State. During bye-elections, in case the constituency is comprised in State Capital/Metropolitan Cities/Municipal Corporations, then the code would be applicable in the area of concerned Constituency only. In all other cases the MCC would be enforced in the entire district(s) covering the Constituency going for bye-election(s).",
+          "keywords": [
+            "during",
+            "code",
+            "applicability",
+            "of",
+            "what",
+            "is"
+          ],
+          "search_text": "what is applicability of code during general elections and bye-elections?"
+        },
+        {
+          "id": "MOD_005",
+          "question": "What are the salient features of the Model Code of Conduct?",
+          "answer": "The salient features of the Model Code of Conduct lay down how political parties, contesting candidates and party(s) in power should conduct themselves during the process of elections i.e. on their general conduct during electioneering, holding meetings and processions, poll day activities and functioning of the party in power etc.",
+          "keywords": [
+            "salient",
+            "are",
+            "the",
+            "of",
+            "what",
+            "features"
+          ],
+          "search_text": "what are the salient features of the model code of conduct?"
+        },
+        {
+          "id": "MOD_006",
+          "question": "Whether a Minister can combine his official visit with electioneering work?",
+          "answer": "No The Ministers shall not combine their official visit with electioneering work and shall not also make use of official machinery or personnel during the electioneering work however, the Commission has exempted the Prime Minister from the operation of the model code of conduct provision pertaining to the combining of official visit with electioneering visit.",
+          "keywords": [
+            "his",
+            "can",
+            "minister",
+            "whether",
+            "combine",
+            "a"
+          ],
+          "search_text": "whether a minister can combine his official visit with electioneering work?"
+        },
+        {
+          "id": "MOD_007",
+          "question": "Whether Govt. transport can be used for electioneering work?",
+          "answer": "No transport including official air-crafts, vehicles etc. shall be used for furtherance of the interest of any party or a candidate.",
+          "keywords": [
+            "can",
+            "used",
+            "whether",
+            "govt",
+            "transport",
+            "be"
+          ],
+          "search_text": "whether govt. transport can be used for electioneering work?"
+        },
+        {
+          "id": "MOD_008",
+          "question": "Whether Govt. can make transfers and postings of officials who are related to election work?",
+          "answer": "There shall be a total ban on the transfer and posting of all officers/officials directly or indirectly connected with the conduct of the election. If any transfer or posting of an officer is considered necessary, prior approval of the Commission shall be obtained.",
+          "keywords": [
+            "and",
+            "can",
+            "transfers",
+            "whether",
+            "govt",
+            "make"
+          ],
+          "search_text": "whether govt. can make transfers and postings of officials who are related to election work?"
+        },
+        {
+          "id": "MOD_009",
+          "question": "Suppose an officer related to election work has been transferred by the Govt. before enforcement of model code of conduct and has not taken over charge at new place. Can such officer take over charge of office at new place after announcement of the code?",
+          "answer": "No. Status-quo-ante shall be maintained.",
+          "keywords": [
+            "to",
+            "officer",
+            "an",
+            "related",
+            "election",
+            "suppose"
+          ],
+          "search_text": "suppose an officer related to election work has been transferred by the govt. before enforcement of model code of conduct and has not taken over charge at new place. can such officer take over charge of office at new place after announcement of the code?"
+        },
+        {
+          "id": "MOD_010",
+          "question": "Whether a Minister of Union or State can summon any election related officer of the constituency or the State for any official discussion during the period of elections?",
+          "answer": "No Minister, whether of Union or State, can summon any election related officer of the constituency or the State for any official discussions anywhere. Only exception will be when a Minister, in his capacity as in charge of the department concerned, or a Chief Minister undertakes an official visit to a constituency, in connection with failure of law and order or a natural calamity or any such emergency which requires personal presence of such Ministers/Chief Ministers for the specific purpose of supervising review/salvage/relief and such like purpose. If Union Minister is traveling out of Delhi on purely official business, which cannot be avoided in public interest, then a letter certifying to this effect should be sent from the concerned Secretary of the Ministry/Department to the Chief Secretary of the concerned State, with a copy to the Election Commission.",
+          "keywords": [
+            "or",
+            "union",
+            "minister",
+            "of",
+            "whether",
+            "a"
+          ],
+          "search_text": "whether a minister of union or state can summon any election related officer of the constituency or the state for any official discussion during the period of elections?"
+        },
+        {
+          "id": "MOD_011",
+          "question": "Can an official meet the minister on his private visit to the Constituency where elections are being held?",
+          "answer": "No. Any official who meets the Minister on his private visit to the constituency shall be guilty of misconduct under the relevant service rules; and if he happens to be an official mentioned in Section 129 (1) of the Representation of People Act, 1951, he shall also be additionally considered to have violated the statutory provisions of that Section and liable to penal action provided thereunder.",
+          "keywords": [
+            "the",
+            "can",
+            "minister",
+            "an",
+            "official",
+            "meet"
+          ],
+          "search_text": "can an official meet the minister on his private visit to the constituency where elections are being held?"
+        },
+        {
+          "id": "MOD_012",
+          "question": "Whether Ministers are entitled for official vehicle during the election?",
+          "answer": "Ministers are entitled to use their official vehicles only for commuting from their official residence to their office for official work provided that such commuting is not combined with any electioneering or any political activity.",
+          "keywords": [
+            "ministers",
+            "entitled",
+            "are",
+            "whether",
+            "official",
+            "for"
+          ],
+          "search_text": "whether ministers are entitled for official vehicle during the election?"
+        },
+        {
+          "id": "MOD_013",
+          "question": "Whether Ministers or any other political functionaries can use pilot car with beacon lights affixed with siren?",
+          "answer": "Minister or any other political functionary is not allowed during election period, to use pilot car or car with beacon lights of any colour or car affixed with sirens of any kind whether on private or official visit, even if the State administration has granted him a security cover requiring presence of armed guards to accompany him on such visit. This prohibition is applicable whether the vehicle is government owned or private owned.",
+          "keywords": [
+            "ministers",
+            "political",
+            "or",
+            "whether",
+            "any",
+            "other"
+          ],
+          "search_text": "whether ministers or any other political functionaries can use pilot car with beacon lights affixed with siren?"
+        },
+        {
+          "id": "MOD_014",
+          "question": "Suppose a vehicle has been provided to Minister by the State and the Minister is given an allowance for maintenance of such vehicle. Can it be used by the Minister for election purposes?",
+          "answer": "Where a vehicle is provided by the State or the Minister is given an allowance for maintenance of the vehicle, he cannot use such vehicle for election.",
+          "keywords": [
+            "has",
+            "provided",
+            "been",
+            "vehicle",
+            "a",
+            "suppose"
+          ],
+          "search_text": "suppose a vehicle has been provided to minister by the state and the minister is given an allowance for maintenance of such vehicle. can it be used by the minister for election purposes?"
+        },
+        {
+          "id": "MOD_015",
+          "question": "Whether there is any restriction or visits of members of National Commission for Schedule Castes or any other similar National/State Commissions?",
+          "answer": "It is advised that all official visits of Members of such Commissions shall be deferred, unless any such visit becomes unavoidable in an emergent situation, till the completion of election exercise to avoid any misunderstanding that may arise in any quarters.",
+          "keywords": [
+            "there",
+            "restriction",
+            "or",
+            "whether",
+            "is",
+            "any"
+          ],
+          "search_text": "whether there is any restriction or visits of members of national commission for schedule castes or any other similar national/state commissions?"
+        },
+        {
+          "id": "MOD_016",
+          "question": "Whether a Chief Minister/Minister/Speaker can attend a “State Day” function of a State?",
+          "answer": "There is no objection provided that he does not make any political speech on the occasion and the function is to be conducted only by Govt. officials. No advertisement depicting the photograph of Chief Minister/Minister/Speaker shall be released.",
+          "keywords": [
+            "chief",
+            "minister",
+            "whether",
+            "speaker",
+            "a"
+          ],
+          "search_text": "whether a chief minister/minister/speaker can attend a “state day” function of a state?"
+        },
+        {
+          "id": "MOD_017",
+          "question": "Whether Governor/Chief Minister/Ministers can participate and address the Convocation function of University or Institute?",
+          "answer": "Governor may participate and address the Convocation. Chief Minister or Ministers may be advised not to participate and address the Convocation.",
+          "keywords": [
+            "ministers",
+            "governor",
+            "can",
+            "minister",
+            "whether",
+            "chief"
+          ],
+          "search_text": "whether governor/chief minister/ministers can participate and address the convocation function of university or institute?"
+        },
+        {
+          "id": "MOD_018",
+          "question": "Whether “Iftar Party” or any other similar party can be hosted at the residence of political functionaries, the expenses of which will be borne by State exchequer?",
+          "answer": "No. However any individual is free by to host any such party in his personal capacity and at his personal expense.",
+          "keywords": [
+            "or",
+            "whether",
+            "any",
+            "party",
+            "iftar",
+            "other"
+          ],
+          "search_text": "whether “iftar party” or any other similar party can be hosted at the residence of political functionaries, the expenses of which will be borne by state exchequer?"
+        },
+        {
+          "id": "MOD_019",
+          "question": "Is there any restriction on issue of advertisement at the cost of public exchequer regarding achievements with a view to furthering the prospects of the party in power?",
+          "answer": "Yes. The advertisement regarding achievements of the party at the cost of public exchequer in the print and electronic media and the misuse of official mass media during the period of election is prohibited",
+          "keywords": [
+            "there",
+            "issue",
+            "on",
+            "restriction",
+            "is",
+            "any"
+          ],
+          "search_text": "is there any restriction on issue of advertisement at the cost of public exchequer regarding achievements with a view to furthering the prospects of the party in power?"
+        },
+        {
+          "id": "MOD_020",
+          "question": "Whether hoardings/advertisements etc. depicting the achievements of the party(s) in power at Centre/State Governments at the cost of public exchequer can be continued?",
+          "answer": "No. All such hoardings, advertisements etc. on display shall be removed forthwith by the concerned authorities. Further, no advertisements should be issued in the newspapers and other media including electronic media at the cost of public exchequer.",
+          "keywords": [
+            "depicting",
+            "hoardings",
+            "advertisements",
+            "the",
+            "whether",
+            "etc"
+          ],
+          "search_text": "whether hoardings/advertisements etc. depicting the achievements of the party(s) in power at centre/state governments at the cost of public exchequer can be continued?"
+        },
+        {
+          "id": "MOD_021",
+          "question": "Whether a Minister or any other authority can sanction grants/ payments out of discretionary funds?",
+          "answer": "No. Ministers and other authorities shall not sanction grants/payments out of discretionary funds from the time elections are announced.",
+          "keywords": [
+            "or",
+            "minister",
+            "whether",
+            "any",
+            "a",
+            "other"
+          ],
+          "search_text": "whether a minister or any other authority can sanction grants/ payments out of discretionary funds?"
+        },
+        {
+          "id": "MOD_022",
+          "question": "Suppose work order has been issued in respect of a scheme or a programme. Can it be started after announcement of election programme?",
+          "answer": "Work shall not be started in respect of which work order has been issued before announcement of election but the work has actually not started in the field. If a work has actually started in the field that can be continued.",
+          "keywords": [
+            "has",
+            "been",
+            "work",
+            "order",
+            "issued",
+            "suppose"
+          ],
+          "search_text": "suppose work order has been issued in respect of a scheme or a programme. can it be started after announcement of election programme?"
+        },
+        {
+          "id": "MOD_023",
+          "question": "Whether fresh release of funds under MPs/MLAs/MLCs Local Area Development Fund of any scheme can be made?",
+          "answer": "No. Fresh release of funds under MPs/MLAs/MLCs Local Area Development Fund of any scheme shall not be made in any area where election is in progress, till the completion of the election process.",
+          "keywords": [
+            "funds",
+            "under",
+            "of",
+            "whether",
+            "release",
+            "fresh"
+          ],
+          "search_text": "whether fresh release of funds under mps/mlas/mlcs local area development fund of any scheme can be made?"
+        }
+      ]
+    },
+    {
+      "title": "Election to Council of States",
+      "faqs": []
+    },
+    {
+      "title": "Presidential Election",
+      "faqs": [
+        {
+          "id": "PRE_001",
+          "question": "Who elects the President of India?",
+          "answer": "wer: The President is elected by an Electoral College, which consists of the elected members of both Houses of Parliament and the elected members of the Legislative Assemblies of all the States and also of NCT of Delhi and the Union Territory of Puducherry. [Article 54 of the Constitution of India]",
+          "keywords": [
+            "elects",
+            "india",
+            "the",
+            "of",
+            "who",
+            "president"
+          ],
+          "search_text": "who elects the president of india?"
+        },
+        {
+          "id": "PRE_002",
+          "question": "What is the term of the office of the President?",
+          "answer": "wer: The President shall hold office for a term of 5 years from the date on which he enters upon his office. He shall, however, continue to hold office notwithstanding the expiry of his term, until his successor enters upon his office. [Article 56 of the Constitution of India]",
+          "keywords": [
+            "the",
+            "of",
+            "term",
+            "what",
+            "is"
+          ],
+          "search_text": "what is the term of the office of the president?"
+        },
+        {
+          "id": "PRE_003",
+          "question": "When is the election of the Office of President of India held?",
+          "answer": "wer: Under the provisions of sub-section (3) of Section 4 of the Presidential and Vice-Presidential Elections Act, 1952, the notification calling the election to the office of the President can be issued by the Election Commission on any day within the period of sixty days before the expiry of the term of office of the outgoing President. The election schedule shall be so fixed, that the President-elect is able to enter upon his office on the day following the expiry of the term of the outgoing President.",
+          "keywords": [
+            "the",
+            "of",
+            "when",
+            "is",
+            "election"
+          ],
+          "search_text": "when is the election of the office of president of india held?"
+        },
+        {
+          "id": "PRE_004",
+          "question": "Who conducts the election to the Office of President of India?",
+          "answer": "wer: Under Article 324 of the Constitution of India, the authority to conduct elections to the Office of President is vested in the Election Commission of India.",
+          "keywords": [
+            "conducts",
+            "to",
+            "the",
+            "election",
+            "who"
+          ],
+          "search_text": "who conducts the election to the office of president of india?"
+        },
+        {
+          "id": "PRE_005",
+          "question": "What electoral system/process is followed for the election to the office of the President?",
+          "answer": "wer: As per Article 55(3) of the Constitution of India, the election of the President shall be held in accordance with the system of proportional representation by means of single transferable vote and the voting at such election shall be by secret ballot.",
+          "keywords": [
+            "system",
+            "electoral",
+            "process",
+            "what",
+            "is",
+            "followed"
+          ],
+          "search_text": "what electoral system/process is followed for the election to the office of the president?"
+        },
+        {
+          "id": "PRE_006",
+          "question": "What are the Qualifications required by a candidate to contest the election to the Office of the President of India?",
+          "answer": "wer: Under Article 58, a candidate should fulfill the following eligibility conditions to contest the election to the Office of President: - 1. Must be a citizen of India, 2. Must have completed 35 years of age, 3. Must be eligible to be a member of the Lok Sabha, 4. Should not be holding any office of profit under the Government of India or the Government of any State or under any local or other authority subject to the control of any of the said Governments. However, the candidate may be holding the office of President or Vice-President or Governor of any State or Ministers of the Union or any State and shall be eligible to contest election.",
+          "keywords": [
+            "are",
+            "the",
+            "required",
+            "what",
+            "qualifications",
+            "by"
+          ],
+          "search_text": "what are the qualifications required by a candidate to contest the election to the office of the president of india?"
+        },
+        {
+          "id": "PRE_007",
+          "question": "Apart from the above what are the conditions to be fulfilled by a candidate for his nomination to be valid?",
+          "answer": "wer: A nomination paper of a candidate for the election has to be made in the prescribed form (Form 2 appended to the Presidential and Vice-Presidential Elections Rules, 1974) and it has to be subscribed by at least fifty electors as proposers and at least fifty electors as seconders. The nomination paper duly completed in all respects has to be presented to the Returning Officer, between 11AM and 3PM on any day other than on a public holiday appointed for the purpose by the Election Commission, either by the candidate himself or by any of his proposers or seconders. Here ǲElectorsǳ mean elected MPs and elected MLAs who are electors for Presidential Election.The Security Deposit for the election, of Rs.15000/- should also be deposited either in cash with the Returning Officer or a receipt showing that the amount has been deposited by the candidate or on his behalf in the Reserve Bank of India or in a Government Treasury should be furnished along with the nomination paper.The candidate is also required to furnish a certified copy of the entry showing his name in the current electoral roll for the Parliamentary Constituency in which the candidate is registered as an elector. [see Sections 5B and 5C of the President and Vice-President Elections Act, 1952]",
+          "keywords": [
+            "apart",
+            "above",
+            "the",
+            "from",
+            "are",
+            "what"
+          ],
+          "search_text": "apart from the above what are the conditions to be fulfilled by a candidate for his nomination to be valid?"
+        },
+        {
+          "id": "PRE_008",
+          "question": "Who is appointed the Returning Officer/Assistant Returning Officer for the election to the Office of President of India? Who makes such appointment?",
+          "answer": "wer: By convention, the Secretary General, Lok Sabha or the Secretary General, Rajya Sabha is appointed as the Returning Officer, by rotation. Two other senior officers of the Lok Sabha/ Rajya Sabha Secretariat and the Secretaries and one more senior officer of Legislative Assemblies of all States including NCT of Delhi and Union Territory of Puducherry, are also appointed as the Assistant Returning Officers. The Election Commission of India makes such appointments.[For the Presidential Election, 2017 the Secretary General Lok Sabha is the Returning Officer]",
+          "keywords": [
+            "appointed",
+            "officer",
+            "the",
+            "is",
+            "who",
+            "returning"
+          ],
+          "search_text": "who is appointed the returning officer/assistant returning officer for the election to the office of president of india? who makes such appointment?"
+        },
+        {
+          "id": "PRE_009",
+          "question": "Can a Candidate submit more than one nomination paper? What would be the security deposit to be made by such candidate?",
+          "answer": "wer: Yes. A candidate can file a maximum of four nomination papers. However, he is required to make only one security deposit in this regard. [see Section 5B (6) and 5C of the President and Vice-President Elections Act, 1952]",
+          "keywords": [
+            "than",
+            "can",
+            "submit",
+            "more",
+            "a",
+            "candidate"
+          ],
+          "search_text": "can a candidate submit more than one nomination paper? what would be the security deposit to be made by such candidate?"
+        },
+        {
+          "id": "PRE_010",
+          "question": "Can an elector propose or second the nomination of more than one candidate at a Presidential election?",
+          "answer": "wer: No. An elector can propose or second the name of only one candidate at a Presidential election. If he subscribes as proposer or seconder, the nomination papers of more than one candidate, his signature shall be deemed operative only on the nomination paper first delivered to the Returning Officer. [see Section 5B(5) of the President and Vice-President Elections Act, 1952]",
+          "keywords": [
+            "elector",
+            "can",
+            "or",
+            "propose",
+            "second",
+            "an"
+          ],
+          "search_text": "can an elector propose or second the nomination of more than one candidate at a presidential election?"
+        }
+      ]
+    },
+    {
+      "title": "Election Machinery",
+      "faqs": [
+        {
+          "id": "ELE_001",
+          "question": "Which authority conducts elections to the offices of the President and Vice-President of India ?",
+          "answer": "Election Commission of India (ECI) Under Article 324(1) of the Constitution of India, the Election Commission of India, interalia, is vested with the power of superintendence, direction and control of conducting the elections to the offices of the President and Vice-President of India. Detailed provisions are made under the Presidential and Vice Presidential Elections Act, 1952 and the rules made thereunder.",
+          "keywords": [
+            "conducts",
+            "which",
+            "to",
+            "elections",
+            "the",
+            "authority"
+          ],
+          "search_text": "which authority conducts elections to the offices of the president and vice-president of india ?"
+        },
+        {
+          "id": "ELE_002",
+          "question": "Which authority conducts elections to Parliament?",
+          "answer": "Election Commission of India (ECI) The same Article 324 also vests in the Commission the powers of superintendence, direction and control of the elections to both Houses of Parliament. Detailed provisions are made under the Representation of the People Act, 1951 and the rules made thereunder.",
+          "keywords": [
+            "conducts",
+            "which",
+            "to",
+            "elections",
+            "parliament",
+            "authority"
+          ],
+          "search_text": "which authority conducts elections to parliament?"
+        },
+        {
+          "id": "ELE_003",
+          "question": "Which authority conducts elections to the State Legislative Assemblies and Legislative Councils?",
+          "answer": "Election Commission of India (ECI) Article 324 (1) also vests in the Commission the powers of superintendence, direction and control of the elections to both Houses of the State Legislature. Detailed provisions are made under the Representation of the People Act, 1951 and the rules made thereunder.",
+          "keywords": [
+            "conducts",
+            "which",
+            "to",
+            "elections",
+            "the",
+            "authority"
+          ],
+          "search_text": "which authority conducts elections to the state legislative assemblies and legislative councils?"
+        },
+        {
+          "id": "ELE_004",
+          "question": "Which authority conducts elections to Corporations, Municipalities and other Local Bodies ?",
+          "answer": "The State Election Commissions (SECs) The State Election Commissions constituted under the Constitution (Seventy-third and Seventy-fourth) Amendments Act, 1992 for each State / Union Territory are vested with the powers of conduct of elections to the Corporations, Muncipalities, Zilla Parishads, District Panchayats, Panchayat Samitis, Gram Panchayats and other local bodies. They are independent of the Election Commission of India.",
+          "keywords": [
+            "conducts",
+            "which",
+            "to",
+            "elections",
+            "corporations",
+            "authority"
+          ],
+          "search_text": "which authority conducts elections to corporations, municipalities and other local bodies ?"
+        },
+        {
+          "id": "ELE_005",
+          "question": "What is the present composition of the Election Commission?",
+          "answer": "A Three - Member Body At present, the Election Commission of India is a three-member body, with one Chief Election Commissioner and two Election Commissioners.",
+          "keywords": [
+            "the",
+            "of",
+            "what",
+            "is",
+            "composition",
+            "present"
+          ],
+          "search_text": "what is the present composition of the election commission?"
+        },
+        {
+          "id": "ELE_006",
+          "question": "Has the Election Commission been a multi-member body from the beginning?",
+          "answer": "No. It was not a multi member body from the beginning. It was a single - member body when it was first set up in 1950 and up to 15th October, 1989 with only the Chief Election Commissioner. From 16th October, 1989 upto the 1st January, 1990, it became a three-member body with R.V.S.Peri Sastri (C.E.C) and S.S.Dhanoa and V.S.Seigell as Election Commissioners. From 2nd January, 1990 to 30th September, 1993, it was a single-member Commission and again from 1st October, 1993 it has become a three-member Commission.",
+          "keywords": [
+            "has",
+            "commission",
+            "been",
+            "the",
+            "election",
+            "a"
+          ],
+          "search_text": "has the election commission been a multi-member body from the beginning?"
+        },
+        {
+          "id": "ELE_007",
+          "question": "What is the status Chief Election Commissioner and the Election Commissioners in terms of salaries and allowances etc.?",
+          "answer": "Equivalent to Supreme Court Judges. The Chief Election Commissioner and the two Election Commissioners draw salaries and allowances at par with those of the Judges of the Supreme Court of India as provided for by the Chief Election Commissioner and other Election Commissioners (Conditions of Service) Rules, 1992.",
+          "keywords": [
+            "the",
+            "what",
+            "is",
+            "status",
+            "election",
+            "chief"
+          ],
+          "search_text": "what is the status chief election commissioner and the election commissioners in terms of salaries and allowances etc.?"
+        },
+        {
+          "id": "ELE_008",
+          "question": "What is the term of office of the Chief Election Commissioner? Is it different from the Election Commissioners?",
+          "answer": "The Chief Election Commissioner or an Election Commissioner holds office for a term of six years from the date on which he assumes his office. However, where the Chief Election Commissioner or an Election Commissioner attains the age of sixty-five years before the expiry of the said term of six years, he shall vacate his office on the the date on which he attains sixty-five years of age.",
+          "keywords": [
+            "office",
+            "the",
+            "of",
+            "term",
+            "what",
+            "is"
+          ],
+          "search_text": "what is the term of office of the chief election commissioner? is it different from the election commissioners?"
+        },
+        {
+          "id": "ELE_009",
+          "question": "When the Commissioner becomes a multi-member Commission, how are the decisions taken, whether by majority or by consensus?",
+          "answer": "Section 10 of the Chief Election Commissioner and other Election Commissioners (Conditions of Service) Amendment Act, 1993 is reproduced below:- (1) The Election Commission may be by unanimous decision, regulate the procedure for transaction of to business as also allocation of its business amongst the Chief Election Commissioner and their Election Commissioners. (2) Save as provided in sub section (i) all business of the Election Commission shall, as far as possible, be transacted unanimously. (3) Subject to the provisions of sub-section (ii), if the Chief Election Commissioner and other Election Commissioners differ in opinion on any matter, such matter shall be decided by according to the opinion of the majority.",
+          "keywords": [
+            "becomes",
+            "the",
+            "multi",
+            "when",
+            "commissioner",
+            "a"
+          ],
+          "search_text": "when the commissioner becomes a multi-member commission, how are the decisions taken, whether by majority or by consensus?"
+        },
+        {
+          "id": "ELE_010",
+          "question": "Who appoints the Chief Election Commissioners and Election Commissioners?",
+          "answer": "The President. Under Article 324(2) of the Constitution of India, the President of India is empowered to appoint the Chief Election Commissioner and the Election Commissioners.",
+          "keywords": [
+            "who",
+            "the",
+            "commissioners",
+            "election",
+            "chief",
+            "appoints"
+          ],
+          "search_text": "who appoints the chief election commissioners and election commissioners?"
+        }
+      ]
+    },
+    {
+      "title": "Parliament",
+      "faqs": [
+        {
+          "id": "PAR_001",
+          "question": "What is the composition of Parliament of India?",
+          "answer": "According to Article 79 of the Constitution of India, the Parliament consists of President of India and the two Houses of Parliament known as Council of States (Rajya Sabha) and House of the People (Lok Sabha).",
+          "keywords": [
+            "the",
+            "of",
+            "what",
+            "is",
+            "parliament",
+            "composition"
+          ],
+          "search_text": "what is the composition of parliament of india?"
+        },
+        {
+          "id": "PAR_002",
+          "question": "Who elects the President of India?",
+          "answer": "The President is elected by the members of an electoral college consisting of the elected members of both the Houses of Parliament and the elected members of the Legislative Assemblies of States and the Union Territories of Delhi and Pondicherry.",
+          "keywords": [
+            "elects",
+            "india",
+            "the",
+            "of",
+            "who",
+            "president"
+          ],
+          "search_text": "who elects the president of india?"
+        },
+        {
+          "id": "PAR_003",
+          "question": "What is the manner of election of President?",
+          "answer": "According to Article 55 of the Constitution, as for as practicable, there has to be uniformity in the scale of representation of the different states at the election of the President. For the purpose of securing such uniformity among the States, the number of votes to which each State is entitled is determined as follows:- (a) every elected member of the legislative assembly of a State shall have as many votes as there are multiples of one thousand in the quotient obtained by dividing the population of the state by the total number of elected members of the Assembly; (b) If after taking the said multiples of one thousand, the remainder is not less than five hundred, then the vote of each member shall be further increased by one; (c) each elected member of either House of Parliament shall have such number of votes as may be obtained by dividing the total number of votes assigned to the members of the State Legislation Assemblies by the total number of elected members of both the House of Parliament fractions exceeding one-half being counted as one and & other fractions being disregarded.The election of the President shall be held in accordance with the system of proportional representation by means of the single transferable vote and the voting shall be by secret ballot.",
+          "keywords": [
+            "manner",
+            "the",
+            "of",
+            "what",
+            "is",
+            "election"
+          ],
+          "search_text": "what is the manner of election of president?"
+        },
+        {
+          "id": "PAR_004",
+          "question": "What is the term of office of President?",
+          "answer": "The President shall hold office for a term of five years from the date on which he enters upon his office.",
+          "keywords": [
+            "office",
+            "the",
+            "of",
+            "term",
+            "what",
+            "is"
+          ],
+          "search_text": "what is the term of office of president?"
+        },
+        {
+          "id": "PAR_005",
+          "question": "Will there be any situation in which the President demits office before the five year term?",
+          "answer": "Yes There will be two such situations. The first is when the President resigns his office by writing under his hand addressed to the Vice-President and the second when the President is removed from office by impeachment for violation of the constitution.",
+          "keywords": [
+            "there",
+            "will",
+            "in",
+            "any",
+            "situation",
+            "be"
+          ],
+          "search_text": "will there be any situation in which the president demits office before the five year term?"
+        },
+        {
+          "id": "PAR_006",
+          "question": "What is the procedure for impeachment of the President?",
+          "answer": "According to Article 61 of the Constitution, when a President is to be impeached for violation of the Constitution, the charge shall be preferred by either House of Parliament. No such change shall be preferred unless (a) the proposal to prefer such change is contained in a resolution which has been moved after at least fourteen days' notice in writing signed by not less than one-fourth of the total number of members of the House has been given of their intention to move the resolution, and (b) such resolution has been passed by a majority of not less than two-third of the total membership of the House.",
+          "keywords": [
+            "the",
+            "impeachment",
+            "what",
+            "is",
+            "procedure",
+            "for"
+          ],
+          "search_text": "what is the procedure for impeachment of the president?"
+        },
+        {
+          "id": "PAR_007",
+          "question": "Is the President eligible for election for a second term?",
+          "answer": "Yes According to Article 57 of the Constitution, a President is eligible for re-election to that office.",
+          "keywords": [
+            "the",
+            "eligible",
+            "is",
+            "election",
+            "president",
+            "for"
+          ],
+          "search_text": "is the president eligible for election for a second term?"
+        },
+        {
+          "id": "PAR_008",
+          "question": "What are the qualifications for election as President?",
+          "answer": "According to Article 58 of the Constitution, no person shall be eligible for election as President unless he is a citizen of India, has completed the age of thirty-five years and is qualified for election as a member of the House of the People. A person shall not be eligible if he holds any office of profit under the Government of India or the Government of any State or under any local or other authority subject to the control of any of the said Government.",
+          "keywords": [
+            "are",
+            "the",
+            "what",
+            "election",
+            "qualifications",
+            "for"
+          ],
+          "search_text": "what are the qualifications for election as president?"
+        },
+        {
+          "id": "PAR_009",
+          "question": "Can a Member of Parliament or the State Legislature become the President?",
+          "answer": "The President shall nor be a member of either House of Parliament or of a House of the Legislature of any state and if any such member is elected President he shall be claimed to have vacated his seat in that House on the date on which he enters upon office as President.",
+          "keywords": [
+            "can",
+            "or",
+            "member",
+            "of",
+            "parliament",
+            "a"
+          ],
+          "search_text": "can a member of parliament or the state legislature become the president?"
+        },
+        {
+          "id": "PAR_010",
+          "question": "Who elects the Vice-President of India?",
+          "answer": "The Vice-President is elected by the members of an electoral college consisting of the members of both House of Parliament.",
+          "keywords": [
+            "elects",
+            "vice",
+            "the",
+            "of",
+            "who",
+            "president"
+          ],
+          "search_text": "who elects the vice-president of india?"
+        }
+      ]
+    },
+    {
+      "title": "Constituencies",
+      "faqs": [
+        {
+          "id": "CON_001",
+          "question": "There are 543 Parliamentary constituencies in India each electing one member. Who demarcates the boundaries of these constituencies?",
+          "answer": "Delimitation Commission Under Article 82 of the Constitution, the Parliament by law enacts a Delimitation Act after every census. After coming into force commencement of the Act, the Central Government constitutes a Delimitation Commission. This Delimitation Commission demarcates the boundaries of the Parliamentary Constituencies as per provisions of the Delimitation Act. The present delimitation of constituencies has been done on the basis of 2001 census figures under the provisions of Delimitation Act, 2002. Notwithstanding the above, the Constitution of India was specifically amended in 2002 not to have delimitation of constituencies till the first census after 2026. Thus, the present Constituencies carved out on the basis of 2001 census shall continue to be in operation till the first census after 2026..",
+          "keywords": [
+            "there",
+            "543",
+            "constituencies",
+            "are",
+            "parliamentary",
+            "in"
+          ],
+          "search_text": "there are 543 parliamentary constituencies in india each electing one member. who demarcates the boundaries of these constituencies?"
+        },
+        {
+          "id": "CON_002",
+          "question": "What is the main basis for allocation of seats to various States in the Lok Sabha?",
+          "answer": "Population of the State Population is the basis of allocation of seats of the Lok Sabha. As far as possible, every State gets representation in the Lok Sabha in proportion to its population as per census figures.",
+          "keywords": [
+            "basis",
+            "the",
+            "main",
+            "what",
+            "is",
+            "for"
+          ],
+          "search_text": "what is the main basis for allocation of seats to various states in the lok sabha?"
+        },
+        {
+          "id": "CON_003",
+          "question": "Is there any reservation of seats for any special category in Lok Sabha?",
+          "answer": "Yes In Lok Sabha there is reservation of seats for Scheduled Castes and Scheduled Tribes. Here also census figures are taken into account.",
+          "keywords": [
+            "there",
+            "reservation",
+            "seats",
+            "of",
+            "is",
+            "any"
+          ],
+          "search_text": "is there any reservation of seats for any special category in lok sabha?"
+        },
+        {
+          "id": "CON_004",
+          "question": "On what basis is this reservation made?",
+          "answer": "Allocation of seats for Scheduled Castes and Tribes in the Lok Sabha are made on the basis of proportion of Scheduled Castes and Tribes in the State concerned to that of the total population, vide provision contained in Article 330 of the Constitution of India read with Section 3 of the R. P. Act, 1950.",
+          "keywords": [
+            "basis",
+            "this",
+            "reservation",
+            "on",
+            "what",
+            "is"
+          ],
+          "search_text": "on what basis is this reservation made?"
+        },
+        {
+          "id": "CON_005",
+          "question": "How many seats are reserved for Scheduled Castes in Lok Sabha?",
+          "answer": "84 For Scheduled Castes, 84 seats are reserved in Lok Sabha. The 1st schedule to Representation of People Act, 1950 as amended vide Representation of People (Amendment) Act , 2008 gives the Statewise breakup.",
+          "keywords": [
+            "seats",
+            "are",
+            "how",
+            "reserved",
+            "many",
+            "for"
+          ],
+          "search_text": "how many seats are reserved for scheduled castes in lok sabha?"
+        },
+        {
+          "id": "CON_006",
+          "question": "How many seats are reserved for Scheduled Tribes in Lok Sabha?",
+          "answer": "47 For Scheduled Tribes, 47 seats are reserved in Lok Sabha. The 1st schedule to R. P. Act, 1950 as amended vide Representation of People (Amendment) Act , 2008 gives the Statewise break up.",
+          "keywords": [
+            "seats",
+            "are",
+            "how",
+            "reserved",
+            "many",
+            "for"
+          ],
+          "search_text": "how many seats are reserved for scheduled tribes in lok sabha?"
+        },
+        {
+          "id": "CON_007",
+          "question": "Which are the States having the minimum number of seats in Lok Sabha?",
+          "answer": "The following States and Union Territories have one seat each in the Lok Sabha Mizoram,Nagaland,Sikkim,Andaman and Nicobar Islands,Chandigarh,Dadra and Nagar Haveli,Daman and Diu,Lakshadweep,Pondicherry",
+          "keywords": [
+            "which",
+            "having",
+            "the",
+            "are",
+            "states"
+          ],
+          "search_text": "which are the states having the minimum number of seats in lok sabha?"
+        },
+        {
+          "id": "CON_008",
+          "question": "How many States are there in India?",
+          "answer": "29 There are 29 states in India viz. Andhra Pradesh, Arunachal Pradesh, Assam, Bihar, Chhattisgarh, Goa, Gujarat, Haryana, Himachal Pradesh, Jammu and Kashmir, Jharkhand, Karnataka, Kerala, Madhya Pradesh, Maharashtra, Manipur, Meghalaya, Mizoram, Nagaland, Orissa, Punjab, Rajasthan, Sikkim, Tamil Nadu, Telangana, Tripura, Uttar Pradesh, Uttaranchal and West Bengal.",
+          "keywords": [
+            "there",
+            "are",
+            "how",
+            "many",
+            "in",
+            "states"
+          ],
+          "search_text": "how many states are there in india?"
+        },
+        {
+          "id": "CON_009",
+          "question": "How many Union Territories are in India?",
+          "answer": "Seven There are 7 Union Territories in India. Andaman and Nicobar Islands, Chandigarh, Dadra and Nagar Haveli, Daman and Diu, Delhi, Lakshadweep and Pondicherry.",
+          "keywords": [
+            "are",
+            "union",
+            "how",
+            "many",
+            "in",
+            "territories"
+          ],
+          "search_text": "how many union territories are in india?"
+        },
+        {
+          "id": "CON_010",
+          "question": "For every State, there has to be a Legislative Assembly, but it is not so in the case of all Union Territories. Which are the U.Ts. having a Legislative Assembly?",
+          "answer": "Two Out of the 7 Union Territories, only Delhi and Pondicherry have Legislative Assemblies.",
+          "keywords": [
+            "there",
+            "has",
+            "to",
+            "state",
+            "every",
+            "for"
+          ],
+          "search_text": "for every state, there has to be a legislative assembly, but it is not so in the case of all union territories. which are the u.ts. having a legislative assembly?"
+        }
+      ]
+    }
+  ]
+}

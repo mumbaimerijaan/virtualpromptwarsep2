@@ -1,5 +1,7 @@
 import React from 'react';
-import { Menu, Globe, ChevronRight, UserPlus, Search, Edit3, CheckSquare, BookOpen, MessageSquare, ShieldCheck, Megaphone, Bot } from 'lucide-react';
+import { Menu, Globe, ChevronRight, UserPlus, Search, Edit3, CheckSquare, BookOpen, MessageSquare, ShieldCheck, Megaphone, Bot, Clock, Home as HomeIcon } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { ROUTES } from '../lib/routes';
 import logoImg from '../assets/logo.png';
 import heroImg from '../assets/hero.png';
 
@@ -23,11 +25,23 @@ export const ActionItem = ({ icon: Icon, title, iconColorClass, iconBgClass, has
 };
 
 export const Header = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const isHomePage = location.pathname === ROUTES.HOME;
+
   return (
     <header className="w-full flex justify-between items-center py-5">
-      <button aria-label="Open navigation menu" className="p-1 -ml-1 text-slate-800 focus:outline-none">
-        <Menu size={28} strokeWidth={2} />
-      </button>
+      <div className="w-10"> {/* Placeholder to keep language button on right if home is hidden */}
+        {!isHomePage && (
+          <button 
+            aria-label="Go to Home" 
+            onClick={() => navigate(ROUTES.HOME)}
+            className="p-1 -ml-1 text-slate-800 focus:outline-none hover:text-indigo-600 transition-colors"
+          >
+            <HomeIcon size={26} strokeWidth={2} />
+          </button>
+        )}
+      </div>
       
       <button aria-label="Select language. Currently English" className="flex items-center gap-1.5 px-3 py-1.5 border border-slate-200 rounded-full hover:bg-slate-50 focus:outline-none">
         <Globe size={16} className="text-slate-600" />
@@ -108,11 +122,18 @@ export const ActionCardList = ({ onAction }) => {
         onClick={() => onAction('voting_process')}
       />
       <ActionItem 
+        icon={Clock} 
+        title="Track my application status" 
+        iconColorClass="text-amber-500"
+        iconBgClass="bg-amber-50"
+        hasBorder={false}
+        onClick={() => onAction('track_status')}
+      />
+      <ActionItem 
         icon={BookOpen} 
         title="Understand elections" 
         iconColorClass="text-red-500"
         iconBgClass="bg-red-50"
-        hasBorder={false}
         onClick={() => onAction('understand_elections')}
       />
       
@@ -146,7 +167,7 @@ export const TrustBadge = () => (
   </div>
 );
 
-export const UpdatesCard = () => (
+export const UpdatesCard = ({ onClick }) => (
   <div className="bg-[#F0FDF4] rounded-2xl p-4 mb-24">
     <div className="flex gap-4 items-start">
       <div className="p-2.5 bg-white rounded-full text-emerald-500 shadow-sm flex-shrink-0">
@@ -158,7 +179,10 @@ export const UpdatesCard = () => (
         <p className="text-slate-500 text-[13px] mt-0.5">Voting on 07 May 2024</p>
         
         <div className="mt-4 flex justify-end">
-          <button className="flex items-center gap-1 text-[13px] font-bold text-emerald-600 border border-emerald-200 bg-white rounded-full px-4 py-1.5 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+          <button 
+            onClick={onClick}
+            className="flex items-center gap-1 text-[13px] font-bold text-emerald-600 border border-emerald-200 bg-white rounded-full px-4 py-1.5 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+          >
             View all updates <ChevronRight size={14} strokeWidth={3} />
           </button>
         </div>
@@ -180,7 +204,7 @@ export const Footer = () => (
 );
 
 export const FloatingAssistant = ({ onClick }) => (
-  <div className="fixed bottom-6 left-0 right-0 mx-auto w-full max-w-[420px] pointer-events-none z-40">
+  <div className="fixed bottom-6 left-0 right-0 mx-auto w-full md:w-[60%] pointer-events-none z-40">
     <div className="absolute right-6 bottom-0">
       <button 
         onClick={onClick}
@@ -198,3 +222,4 @@ export const FloatingAssistant = ({ onClick }) => (
     </div>
   </div>
 );
+export { BottomNav } from './BottomNav'; 
