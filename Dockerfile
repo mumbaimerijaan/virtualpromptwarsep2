@@ -1,0 +1,45 @@
+# Stage 1: Build the Frontend
+FROM node:20-alpine as build-stage
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+# Build arguments for Vite (env vars)
+ARG VITE_GEMINI_API_KEY
+ARG VITE_FIREBASE_API_KEY
+ARG VITE_FIREBASE_AUTH_DOMAIN
+ARG VITE_FIREBASE_PROJECT_ID
+ARG VITE_FIREBASE_STORAGE_BUCKET
+ARG VITE_FIREBASE_MESSAGING_SENDER_ID
+ARG VITE_FIREBASE_APP_ID
+ARG VITE_FIREBASE_MEASUREMENT_ID
+ARG VITE_RECAPTCHA_SITE_KEY
+
+ENV VITE_GEMINI_API_KEY=$VITE_GEMINI_API_KEY
+ENV VITE_FIREBASE_API_KEY=$VITE_FIREBASE_API_KEY
+ENV VITE_FIREBASE_AUTH_DOMAIN=$VITE_FIREBASE_AUTH_DOMAIN
+ENV VITE_FIREBASE_PROJECT_ID=$VITE_FIREBASE_PROJECT_ID
+ENV VITE_FIREBASE_STORAGE_BUCKET=$VITE_FIREBASE_STORAGE_BUCKET
+ENV VITE_FIREBASE_MESSAGING_SENDER_ID=$VITE_FIREBASE_MESSAGING_SENDER_ID
+ENV VITE_FIREBASE_APP_ID=$VITE_FIREBASE_APP_ID
+ENV VITE_FIREBASE_MEASUREMENT_ID=$VITE_FIREBASE_MEASUREMENT_ID
+ENV VITE_RECAPTCHA_SITE_KEY=$VITE_RECAPTCHA_SITE_KEY
+
+RUN npm run build
+
+# Stage 2: Production Server
+FROM node:20-alpine
+WORKDIR /app
+COPY --from=build-stage /app/dist ./dist
+COPY --from=build-stage /app/server ./server
+COPY --from=build-stage /app/package*.json ./
+RUN npm install --production
+
+# Expose port 3001 for the AI Proxy
+EXPOSE 3001
+ENV NODE_ENV=production
+
+# Serve the build and start the proxy
+# Using a simple node script or serve package to serve frontend
+RUN npm install -g serve
+CMD ["sh", "-c", "node server/index.js & serve -s dist -l 3000"]

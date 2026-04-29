@@ -34,17 +34,18 @@ const withExponentialBackoff = async (requestFn, maxRetries = 3, baseDelayMs = 5
 /**
  * Calls the local proxy backend (simulating ADC/Workload Identity).
  */
-export async function classifyIntent(query) {
+export async function classifyIntent(query, history = []) {
   try {
     const fetchAI = async () => {
       const response = await fetch('http://localhost:3001/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          // In a real scenario, you might pass Firebase Auth tokens here 
-          // to prove identity to your Workload Identity-enabled backend.
         },
-        body: JSON.stringify({ prompt: query })
+        body: JSON.stringify({ 
+          prompt: query,
+          history: history.slice(-5) // Send last 5 messages for context
+        })
       });
 
       if (!response.ok) {

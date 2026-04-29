@@ -200,7 +200,7 @@ export const ChatModal = ({ isOpen, onClose }) => {
       }
 
       // 4. Fallback to AI backend (Priority 3 & 4)
-      const response = await classifyIntent(userMessage);
+      const response = await classifyIntent(userMessage, messages);
       
       await saveMessageToFirestore(sessionId, {
         type: 'bot',
@@ -405,6 +405,7 @@ export const ChatModal = ({ isOpen, onClose }) => {
 
             {isLoading && (
               <div className="flex items-start">
+                <div className="sr-only" aria-live="assertive">Assistant is thinking and searching official records...</div>
                 <div className="bg-white rounded-[20px] rounded-bl-sm px-4 py-3 border border-slate-100 shadow-sm">
                   <div className="flex gap-1.5 items-center h-5">
                     <div className="w-1.5 h-1.5 bg-indigo-300 rounded-full animate-bounce [animation-delay:-0.3s]"></div>

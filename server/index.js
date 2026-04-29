@@ -26,21 +26,29 @@ You MUST respond with a JSON object.
 
 app.post('/api/chat', async (req, res) => {
   try {
-    const { prompt } = req.body;
+    const { prompt, history } = req.body;
 
     if (!prompt) {
       return res.status(400).json({ error: 'Prompt is required' });
     }
 
+    // Convert history to Gemini format if present
+    const contents = history && history.length > 0 
+      ? history.map(m => ({ role: m.type === 'user' ? 'user' : 'model', parts: [{ text: m.content }] }))
+      : [];
+    
+    contents.push({ role: 'user', parts: [{ text: prompt }] });
+
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
-      contents: prompt,
+      model: 'gemini-2.0-flash',
+      contents: contents,
       config: {
         systemInstruction: `You are the smart assistant for the 'Matdaan Saathi' mobile application. 
         
         Your instructions:
         1. If the user asks a factual question about Indian elections that you know is TRUE (e.g., 'Minimum age to vote?', 'What is EPIC?'), return a short ONE-LINE answer in the 'message' field and set intent to 'FACT_REPLY'.
-        2. For any other queries where you cannot provide a direct factual answer or guidance, set intent to 'UNKNOWN' and respond EXACTLY with the message: 'I can help with voter services and election guidance.'
+        2. If the user query is a follow-up or requires context from the history, use the provided conversation history to maintain continuity.
+        3. For any other queries where you cannot provide a direct factual answer or guidance, set intent to 'UNKNOWN' and respond EXACTLY with the message: 'I can help with voter services and election guidance.'
         
         You MUST respond with valid JSON containing:
         - intent: FACT_REPLY or UNKNOWN
@@ -58,16 +66,11 @@ app.post('/api/chat', async (req, res) => {
         console.error("Failed to parse Gemini output:", resultText);
         throw new Error("Invalid response format from AI");
     }
-
-    // Here we would normally use AJV to strictly validate resultObj before returning it.
-    // For now, we just pass it back.
     
     res.json(resultObj);
 
   } catch (error) {
     console.error('AI Processing Error:', error);
-    
-    // Gracefully handle leaked API key or other Gemini errors to satisfy the contract
     res.json({
       intent: 'ERROR',
       message: 'I am having trouble connecting to my knowledge base right now. Please try one of the popular topics.',
@@ -76,6 +79,19 @@ app.post('/api/chat', async (req, res) => {
   }
 });
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`Dummy backend proxying AI requests on port ${port}`);
+});
+
+// Graceful Termination for Cloud Run
+process.on('SIGTERM', () => {
+  console.log('SIGTERM signal received: closing HTTP server');
+  server.close(() => {
+    console.log('HTTP server closed');
+    process.exit(0);
+  });
+});
+
+process.on('SIGINT', () => {
+  server.close(() => process.exit(0));
 });
