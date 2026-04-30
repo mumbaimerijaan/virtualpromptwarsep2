@@ -20,6 +20,11 @@ const port = process.env.PORT || 8080;
 app.use(cors());
 app.use(express.json());
 
+// Health check endpoint
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
+
 // Serve static files from the Vite build directory
 const distPath = path.join(__dirname, '../dist');
 app.use(express.static(distPath));
@@ -95,7 +100,8 @@ app.get('*', (req, res) => {
 });
 
 const server = app.listen(port, '0.0.0.0', () => {
-  console.log(`Unified server running on port ${port}`);
+  console.log(`Server running on port ${port}`);
+  console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
 });
 
 // Graceful Termination for Cloud Run
