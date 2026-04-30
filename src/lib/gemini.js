@@ -37,7 +37,7 @@ const withExponentialBackoff = async (requestFn, maxRetries = 3, baseDelayMs = 5
 export async function classifyIntent(query, history = []) {
   try {
     const fetchAI = async () => {
-      const response = await fetch('http://localhost:3001/api/chat', {
+      const response = await fetch('/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

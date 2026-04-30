@@ -35,11 +35,9 @@ COPY --from=build-stage /app/server ./server
 COPY --from=build-stage /app/package*.json ./
 RUN npm install --production
 
-# Expose port 3001 for the AI Proxy
-EXPOSE 3001
+# Expose port 8080 for the unified server
+EXPOSE 8080
 ENV NODE_ENV=production
 
-# Serve the build and start the proxy
-# Using a simple node script or serve package to serve frontend
-RUN npm install -g serve
-CMD ["sh", "-c", "node server/index.js & serve -s dist -l 3000"]
+# Start the unified server
+CMD ["node", "server/index.js"]

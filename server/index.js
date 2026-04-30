@@ -1,20 +1,30 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import { GoogleGenAI } from '@google/genai';
 
-dotenv.config({ path: '../.env' }); // Load from root .env
+// ES Module path support
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Load .env only in development
+if (process.env.NODE_ENV !== 'production') {
+  dotenv.config({ path: path.join(__dirname, '../.env') });
+}
 
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 8080;
 
 app.use(cors());
 app.use(express.json());
 
-// Initialize Gemini - using the same package but on the backend now.
-// In a real ADC environment, you wouldn't pass the API key explicitly 
-// if the environment was properly configured with Workload Identity.
-// For this dummy implementation, we still use the key from .env.
+// Serve static files from the Vite build directory
+const distPath = path.join(__dirname, '../dist');
+app.use(express.static(distPath));
+
+// Initialize Gemini
 const ai = new GoogleGenAI({ apiKey: process.env.VITE_GEMINI_API_KEY });
 
 const SYSTEM_INSTRUCTION = `
@@ -79,8 +89,13 @@ app.post('/api/chat', async (req, res) => {
   }
 });
 
-const server = app.listen(port, () => {
-  console.log(`Dummy backend proxying AI requests on port ${port}`);
+// Catch-all route to serve the frontend for any non-API routes (SPA support)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(distPath, 'index.html'));
+});
+
+const server = app.listen(port, '0.0.0.0', () => {
+  console.log(`Unified server running on port ${port}`);
 });
 
 // Graceful Termination for Cloud Run
@@ -95,3 +110,4 @@ process.on('SIGTERM', () => {
 process.on('SIGINT', () => {
   server.close(() => process.exit(0));
 });
+
