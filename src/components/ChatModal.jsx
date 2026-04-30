@@ -200,7 +200,20 @@ export const ChatModal = ({ isOpen, onClose }) => {
       }
 
       // 4. Fallback to AI backend (Priority 3 & 4)
-      const response = await classifyIntent(userMessage, messages);
+      let recaptchaToken = '';
+      const recaptchaAction = 'chat_message';
+
+      try {
+          if (window.grecaptcha && window.grecaptcha.enterprise) {
+              recaptchaToken = await window.grecaptcha.enterprise.execute('6Le01M4sAAAAAIoL-WINAR75BfYP2UJqYKeB9G66', { action: recaptchaAction });
+          } else {
+              console.warn("reCAPTCHA Enterprise not loaded yet.");
+          }
+      } catch (err) {
+          console.error("reCAPTCHA execution failed:", err);
+      }
+
+      const response = await classifyIntent(userMessage, messages, recaptchaToken, recaptchaAction);
       
       await saveMessageToFirestore(sessionId, {
         type: 'bot',

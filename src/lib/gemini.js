@@ -34,7 +34,7 @@ const withExponentialBackoff = async (requestFn, maxRetries = 3, baseDelayMs = 5
 /**
  * Calls the local proxy backend (simulating ADC/Workload Identity).
  */
-export async function classifyIntent(query, history = []) {
+export async function classifyIntent(query, history = [], recaptchaToken, recaptchaAction) {
   try {
     const fetchAI = async () => {
       const response = await fetch('/api/chat', {
@@ -44,7 +44,9 @@ export async function classifyIntent(query, history = []) {
         },
         body: JSON.stringify({ 
           prompt: query,
-          history: history.slice(-5) // Send last 5 messages for context
+          history: history.slice(-5), // Send last 5 messages for context
+          recaptchaToken: recaptchaToken,
+          recaptchaAction: recaptchaAction
         })
       });
 
