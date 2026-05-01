@@ -158,9 +158,7 @@ app.post('/api/chat', async (req, res) => {
 });
 
 // Catch-all route to serve the frontend for any non-API routes (SPA support)
-/*app.get('*', (req, res) => {
-  res.sendFile(path.join(distPath, 'index.html'));
-});*/
+
 app.get('/:path*', (req, res) => {
   res.sendFile(path.join(distPath, 'index.html'));
 });
