@@ -21,6 +21,24 @@ const port = process.env.PORT || 8080;
 app.use(cors());
 app.use(express.json());
 
+// Set Production CSP Headers (Fixes 'frame-ancestors' ignored in meta tag)
+app.use((req, res, next) => {
+  res.setHeader(
+    'Content-Security-Policy',
+    "default-src 'self'; " +
+    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/; " +
+    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; " +
+    "font-src 'self' https://fonts.gstatic.com; " +
+    "img-src 'self' data: https:; " +
+    "connect-src 'self' https://www.google-analytics.com https://www.google.com/recaptcha/; " +
+    "base-uri 'self'; " +
+    "form-action 'self'; " +
+    "frame-ancestors 'none'; " +
+    "frame-src https://www.google.com/recaptcha/;"
+  );
+  next();
+});
+
 // Health check endpoint
 app.get('/health', (req, res) => {
   res.status(200).send('OK');
