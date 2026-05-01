@@ -1,6 +1,6 @@
 import React, { useState, Suspense } from 'react';
 import { Routes, Route, useNavigate, useLocation, Navigate } from 'react-router-dom';
-import { Header, Hero, ActionCardList, TrustBadge, UpdatesCard, EvaluationCard, Footer, BottomNav } from './components';
+import { Header, Hero, ActionCardList, TrustBadge, UpdatesCard, EvaluationCard, FloatingAssistant, Footer, BottomNav } from './components';
 import ScrollToTop from './components/ScrollToTop';
 import { ChatModal } from './components/ChatModal';
 import { RouteAnnouncer } from './components/RouteAnnouncer';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, Globe, ChevronRight, UserPlus, Search, Edit3, CheckSquare, BookOpen, MessageSquare, ShieldCheck, Megaphone, Bot, Clock, Home as HomeIcon } from 'lucide-react';
+import { Menu, Globe, ChevronRight, UserPlus, Search, Edit3, CheckSquare, BookOpen, MessageSquare, ShieldCheck, Megaphone, Bot, Clock, ShieldAlert, Fingerprint, Home as HomeIcon } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { ROUTES } from '../lib/routes';
 import logoImg from '../assets/logo.png';
