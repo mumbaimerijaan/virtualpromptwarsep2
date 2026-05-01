@@ -51,7 +51,7 @@ RUN npm install --production
 ARG VITE_GEMINI_API_KEY
 ENV VITE_GEMINI_API_KEY=$VITE_GEMINI_API_KEY
 ENV NODE_ENV=production
-
+ENV PORT=8080
 # Cloud Run expects the container to listen on port 8080 by default
 EXPOSE 8080
 

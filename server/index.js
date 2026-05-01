@@ -162,8 +162,12 @@ app.post('/api/chat', async (req, res) => {
 
 
 
-app.get(/.*/, (req, res) => {
-  res.sendFile(path.join(distPath, 'index.html'));
+app.use((req, res, next) => {
+  if (req.method === 'GET' && !req.path.startsWith('/api')) {
+    res.sendFile(path.join(distPath, 'index.html'));
+  } else {
+    next();
+  }
 });
 const server = app.listen(port, '0.0.0.0', () => {
   console.log(`Server running on port ${port}`);
