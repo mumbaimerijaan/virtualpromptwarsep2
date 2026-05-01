@@ -27,3 +27,7 @@ dist-ssr
 .env
 .env.*
 !.env.example
+
+# Project specific
+server/node_modules
+dist/
