@@ -159,10 +159,12 @@ app.post('/api/chat', async (req, res) => {
 
 // Catch-all route to serve the frontend for any non-API routes (SPA support)
 
-app.get('/:path*', (req, res) => {
+
+
+
+app.get(/.*/, (req, res) => {
   res.sendFile(path.join(distPath, 'index.html'));
 });
-
 const server = app.listen(port, '0.0.0.0', () => {
   console.log(`Server running on port ${port}`);
   console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
