@@ -30,16 +30,18 @@ app.get('/health', (req, res) => {
 const distPath = path.join(__dirname, '../dist');
 app.use(express.static(distPath));
 
-// Initialize Gemini
-const ai = new GoogleGenAI({ apiKey: process.env.VITE_GEMINI_API_KEY });
-
-// Initialize reCAPTCHA client
-const recaptchaClient = new RecaptchaEnterpriseServiceClient();
+// Lazy client variables
+let ai = null;
+let recaptchaClient = null;
 
 /**
  * Create an assessment to analyze the risk of a UI action.
  */
 async function createAssessment(token, recaptchaAction) {
+  if (!recaptchaClient) {
+    recaptchaClient = new RecaptchaEnterpriseServiceClient();
+  }
+
   const projectID = process.env.VITE_FIREBASE_PROJECT_ID || "virtual-promptwars-ep2";
   const recaptchaKey = process.env.VITE_RECAPTCHA_SITE_KEY || "6Le01M4sAAAAAIoL-WINAR75BfYP2UJqYKeB9G66";
 
@@ -87,29 +89,32 @@ app.post('/api/chat', async (req, res) => {
 
     // Verify reCAPTCHA
     if (!recaptchaToken || !recaptchaAction) {
-        return res.status(400).json({ 
-            intent: 'ERROR',
-            message: 'Security verification failed. Please refresh and try again.' 
-        });
+      return res.status(400).json({
+        intent: 'ERROR',
+        message: 'Security verification failed. Please refresh and try again.'
+      });
     }
 
     const score = await createAssessment(recaptchaToken, recaptchaAction);
-    
+
     if (score === null || score < 0.5) {
-        console.warn(`Blocking request due to low reCAPTCHA score: ${score}`);
-        return res.status(403).json({ 
-            intent: 'ERROR',
-            message: 'I cannot process this request right now due to security policies. If you are a human, please try again later.' 
-        });
+      console.warn(`Blocking request due to low reCAPTCHA score: ${score}`);
+      return res.status(403).json({
+        intent: 'ERROR',
+        message: 'I cannot process this request right now due to security policies. If you are a human, please try again later.'
+      });
     }
 
-    console.log(`Verified request with reCAPTCHA score: ${score}`);
+    // Initialize Gemini lazily
+    if (!ai) {
+      ai = new GoogleGenAI({ apiKey: process.env.VITE_GEMINI_API_KEY });
+    }
 
     // Convert history to Gemini format if present
-    const contents = history && history.length > 0 
+    const contents = history && history.length > 0
       ? history.map(m => ({ role: m.type === 'user' ? 'user' : 'model', parts: [{ text: m.content }] }))
       : [];
-    
+
     contents.push({ role: 'user', parts: [{ text: prompt }] });
 
     const response = await ai.models.generateContent({
@@ -134,12 +139,12 @@ app.post('/api/chat', async (req, res) => {
     const resultText = response.text();
     let resultObj;
     try {
-        resultObj = JSON.parse(resultText);
+      resultObj = JSON.parse(resultText);
     } catch (e) {
-        console.error("Failed to parse Gemini output:", resultText);
-        throw new Error("Invalid response format from AI");
+      console.error("Failed to parse Gemini output:", resultText);
+      throw new Error("Invalid response format from AI");
     }
-    
+
     res.json(resultObj);
 
   } catch (error) {
@@ -153,7 +158,10 @@ app.post('/api/chat', async (req, res) => {
 });
 
 // Catch-all route to serve the frontend for any non-API routes (SPA support)
-app.get('*', (req, res) => {
+/*app.get('*', (req, res) => {
+  res.sendFile(path.join(distPath, 'index.html'));
+});*/
+app.get('/:path*', (req, res) => {
   res.sendFile(path.join(distPath, 'index.html'));
 });
 
